@@ -9,6 +9,17 @@ header-includes:
 
 
 
+# Brainstorm
+
+**Éléments discussion**:
+
+- Scénarios de décisions de gestion
+- Données ouvertes
+- Caractérisation food webs
+- Services écosystémiques
+- Conservation (AMP)
+- Planification spatiale marine 
+
 # Une belle conclusion générale {-}
 
 Une petite conclusion générale du même format que l'introduction

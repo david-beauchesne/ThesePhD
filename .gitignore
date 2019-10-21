@@ -16,7 +16,7 @@
 
 ## Intermediate documents:
 *.dvi
-*-converted-to.*
+#*-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
@@ -182,11 +182,10 @@ TSWLatexianTemp*
 # KBibTeX
 *~[0-9]*
 
-
-## KC pdf I don't want to be add on the repo
-these.pdf
-
-## KC intermediate files
+## Intermediate files
 intro.tex
 conclu.tex
 chapitre1/chap1.tex
+chapitre2/chap2.tex
+chapitre3/chap3.tex
+chapitre4/chap4.tex

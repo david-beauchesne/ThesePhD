@@ -14,13 +14,13 @@
 
 
 % ----------------------------------------------------------------------%
-% 1- Préambule.                                                        %
+% 1- Préambule.                                                         %
 % ----------------------------------------------------------------------%
 
 % Pour le dépôt initial (recto), utiliser oneside.
 % Pour le dépôt final  (recto-verso), remplacer oneside par twoside.
 
-\documentclass[12pt,oneside,francais,letterpaper]{stylethese}
+\documentclass[12pt,oneside,letterpaper]{stylethese}
 % \documentclass[12pt,twoside,letterpaper]{stylethese}
 
 \raggedbottom % Évite les espaces trop gands entre chaque section.
@@ -36,6 +36,7 @@
 %\usepackage{pgfplots}      	 % dessiner des graphes direct dans LaTeX
 %\pgfplotsset{compat=1.3}
 \usepackage{multicol}
+\usepackage[T1]{fontenc}
 
 \usepackage[utf8x]{inputenc}
 \usepackage{ucs}
@@ -160,7 +161,7 @@
 
 % Taille des légendes des 'Long Tables'
 \setlength{\LTcapwidth}{\linewidth}
-% \setlength{\LTcapwidth}{1.5\linewidth} 
+% \setlength{\LTcapwidth}{1.5\linewidth}
 
 
 
@@ -185,12 +186,13 @@
 \makeindex
 
 % Info sur la thèse (Titre, auteur, etc.)
-\Titre{LE TITRE DE LA THÈSE}
+\Titre{ÉVALUATION DES IMPACTS CUMULÉS SUR LES RÉSEAUX TROPHIQUES}
+\SousTitre{Le cas de l'estuaire et du golfe du Saint-Laurent}
 % Mettre en majuscule!!
-\Auteur{David Beauchesnes}
-\Faculte{programme de doctorat en Biologie}
+\Auteur{David Beauchesne}
+\Faculte{Programme de doctorat en océanographie}
 \Diplome{Philosophiae Doctor}
-\Date{Septembre}{2017}
+\Date{Décembre}{2019}
 
 
 
@@ -205,16 +207,16 @@
 \pdfstringdefDisableCommands{%
 \let\MakeUppercase\relax}
 
-
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%
+% -- To delete - CHECKLIST
+\input{checklist.tex}
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%
 
 % ----------------------------------------------------------------------%
 % 2- Liminaires de la thèse.                                            %
 % ----------------------------------------------------------------------%
 
 \include{liminaires}
-
-
-
 
 
 
@@ -241,6 +243,7 @@
 \input{./chapitre1/chap1.tex}
 \input{./chapitre2/chap2.tex}
 \input{./chapitre3/chap3.tex}
+\input{./chapitre4/chap4.tex}
 
 \cleardoublepage
 
@@ -277,7 +280,7 @@
   \phantomsection\addcontentsline{toc}{chapter}{\MakeUppercase{\@references}}
   \makeatother
   \bibliographystyle{apalike}
-  \bibliography{mybiblio} % Ici mettre le nom de la biblio, ici mylib.bib
+  \bibliography{mybiblio.bib} % Ici mettre le nom de la biblio, ici mylib.bib
 \end{singlespace}
 
 % \begin{singlespace}

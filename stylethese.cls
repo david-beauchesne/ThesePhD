@@ -16,8 +16,9 @@
   \ProvidesClass{stylethese}[2009/05/10 Style pour theses UQAR]
   %\RequirePackage{doublespace,cite,indentfirst,epsfig,ifthen}
   %\RequirePackage{doublespace,indentfirst,epsfig,ifthen,remreset,graphicx,dcolumn,amsmath,makeidx,multicol,natbib}
-  \RequirePackage{setspace,remreset,graphicx,makeidx,ifthen}
-  \RequirePackage[english,french]{babel} % french default
+  %\RequirePackage{epstopdf,epsfig}
+  \RequirePackage{setspace,graphicx,makeidx,ifthen}
+  \RequirePackage[english,main=french]{babel} % french default
 % \RequirePackage[french,english]{babel} % english default
   \LoadClassWithOptions{book}
   \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
@@ -158,6 +159,7 @@
 
   \newcommand\Auteur[1]{\newcommand\@Auteur{#1}}
   \newcommand\Titre[1]{\newcommand\@Titre{#1}}
+  \newcommand\SousTitre[1]{\newcommand\@SousTitre{#1}}
   \newcommand\Faculte[1]{\newcommand\@Faculte{#1}}
   \newcommand\Diplome[1]{\newcommand\@Diplome{#1}}
   \newcommand\Date[2]{\newcommand\@Datea{#1}\newcommand\@Dateb{#2}}
@@ -179,10 +181,12 @@
         % \hskip-1.6cm	\MakeUppercase{Universit\'{e} du Qu\'{e}bec \`{a} Rimouski}
         % \textbf{\MakeUppercase{Universit\'{e} du Qu\'{e}bec \`{a} Rimouski}}\\
 
-        \includegraphics[width=8cm]{img/rimouski-noir.eps}
+        % \includegraphics[width=8cm]{img/rimouski-noir.eps}
+        \includegraphics[width=3.81cm,height=2.08cm]{img/rimouski-noir-eps-converted-to.pdf}
 
 
-        \vfill\textbf{\@Titre}\\
+        \vfill\textbf{\large \@Titre}\\
+        \vskip0.2cm\textbf{\@SousTitre}\\
   	\vfill{\@Travail}
   	{\@Presente} \\
   	\vskip0.1cm{dans le cadre du \@Faculte} \\
