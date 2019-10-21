@@ -1,14 +1,17 @@
 ##-- Le document à faire
 THES = these.pdf
 THTX = these.tex
+
 ##-- Les liminaires à faire + INLI = tous les fichiers de limi_src
 LIMI = liminaires.tex
 LIPA = limi_src
 INLI := $(wildcard limi_src/*.md)
 OULI := $(patsubst %.md,%.tex,$(wildcard limi_src/*.md))
+
 ##-- Introduction
-ITMD = introduction/intro.md
 ITTX = introduction/intro.tex
+ITMD = introduction/intro.md
+
 ##-- CHAPITRES
 ##-- Chapitre 1
 CHP1 = chapitre1/chap1.tex
@@ -22,10 +25,26 @@ CH3M = chapitre3/chap3.md
 ##-- Chapitre 4
 CHP4 = chapitre4/chap4.tex
 CH4M = chapitre4/chap4.md
+
 ##-- Conclusion
-CCMD = conclusion/conclu.md
 CCTX = conclusion/conclu.tex
-##-- Ref
+CCMD = conclusion/conclu.md
+
+##-- ANNEXES
+##-- Annexe 1
+ANN1 = annexe1/annexe1.tex
+AN1M = annexe1/annexe1.md
+##-- Annexe 2
+ANN2 = annexe2/annexe2.tex
+AN2M = annexe2/annexe2.md
+##-- Annexe 3
+ANN3 = annexe3/annexe3.tex
+AN3M = annexe3/annexe3.md
+##-- Annexe 4
+ANN4 = annexe4/annexe4.tex
+AN4M = annexe4/annexe4.md
+
+##-- Références
 REF = mybiblio.bib
 
 ##---------------------------------------------
@@ -56,7 +75,7 @@ PFLAGS = --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-eqnos -
 
 ALL: $(THES)
 
-$(THES): $(THTX) $(LIMI) $(INTH) $(ITTX) $(CCTX) $(REF) $(INLI) $(CHP1) $(CHP2) $(CHP3) $(CHP4) $(CHK)
+$(THES): $(THTX) $(LIMI) $(INTH) $(ITTX) $(CCTX) $(REF) $(INLI) $(CHP1) $(CHP2) $(CHP3) $(CHP4) $(CHK) $(ANN1) $(ANN2) $(ANN3) $(ANN4)
 	pdflatex these
 	bibtex these
 	pdflatex these
@@ -69,26 +88,45 @@ $(LIPA)/%.tex: $(LIPA)/%.md
 	pandoc $< -o $@
 
 $(ITTX): $(ITMD)
-	pandoc $< -o $@ $(PFLAGS)
+	pandoc $< -o introduction/intro.tex $(PFLAGS)
 
 $(CCTX): $(CCMD)
-	pandoc $< -o $@ $(PFLAGS)
+	pandoc $< -o conclusion/conclu.tex $(PFLAGS)
 
+## -- Render chapitres
 $(CHP1): $(CH1M)
-	pandoc $< -o chapitre1/chap1.tex $(PFLAGS)
+	pandoc $< -o chapitre1/main.tex $(PFLAGS)
 	cat chapitre1/head.tex chapitre1/main.tex > $@
 
 $(CHP2): $(CH2M)
-	pandoc $< -o chapitre2/chap2.tex $(PFLAGS)
+	pandoc $< -o chapitre2/main.tex $(PFLAGS)
 	cat chapitre2/head.tex chapitre2/main.tex > $@
 
 $(CHP3): $(CH3M)
-	pandoc $< -o chapitre3/chap3.tex $(PFLAGS)
+	pandoc $< -o chapitre3/main.tex $(PFLAGS)
 	cat chapitre3/head.tex chapitre3/main.tex > $@
 
 $(CHP4): $(CH4M)
-	pandoc $< -o chapitre4/chap4.tex $(PFLAGS)
+	pandoc $< -o chapitre4/main.tex $(PFLAGS)
 	cat chapitre4/head.tex chapitre4/main.tex > $@
+
+## -- Render annexes
+$(ANN1): $(AN1M)
+	pandoc $< -o annexe1/main.tex $(PFLAGS)
+	cat annexe1/head.tex annexe1/main.tex > $@
+
+$(ANN2): $(AN2M)
+	pandoc $< -o annexe2/main.tex $(PFLAGS)
+	cat annexe2/head.tex annexe2/main.tex > $@
+
+$(ANN3): $(AN3M)
+	pandoc $< -o annexe3/main.tex $(PFLAGS)
+	cat annexe3/head.tex annexe3/main.tex > $@
+
+$(ANN4): $(AN4M)
+	pandoc $< -o annexe4/main.tex $(PFLAGS)
+	cat annexe4/head.tex annexe4/main.tex > $@
+
 
 ##---------------------------------------------
 ##-- To delete - CHECKLIST
@@ -102,4 +140,9 @@ $(CHK): $(CHM)
 # Le "-" fait que l'erreur produite quand certains des fichiers à supprimer sont absents lors du "make clean" sera ignorée
 # https://www.gnu.org/software/make/manual/html_node/Errors.html
 clean:
-	-rm intro.tex conclu.tex chapitre1/chap1.tex chapitre2/chap2.tex chapitre3/chap3.tex chapitre4/chap4.tex *.aux *.bbl *.blg *.brf *.idx *.out *.toc *.lot *.lof *.log
+	-rm *.aux *.bbl *.blg *.brf *.idx *.out *.toc *.lot *.lof *.log
+	-rm introduction/intro.tex conclusion/conclu.tex
+	-rm chapitre1/chap1.tex chapitre2/chap2.tex chapitre3/chap3.tex chapitre4/chap4.tex
+	-rm chapitre1/main.tex chapitre2/main.tex chapitre3/main.tex chapitre4/main.tex
+	-rm annexe1/annexe1.tex annexe2/annexe2.tex annexe3/annexe3.tex annexe4/annexe4.tex
+	-rm annexe1/main.tex annexe2/main.tex annexe3/main.tex annexe4/main.tex
