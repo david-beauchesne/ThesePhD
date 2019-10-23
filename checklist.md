@@ -27,6 +27,9 @@
 
 ## Chapitre 1
 
+- [ ] Contexte scientifique (Thèse)
+- [ ] Publication associée (Thèse)
+- [ ] Traduction du résumé de l'article publié (Thèse)
 - [ ] Proposal letter Ecology Letters - Ideas and Perspectives
 - [ ] Cover letter and novelty statement
 - [x] Conflict of interest statement
@@ -56,10 +59,24 @@
 ## Chapitre 2
 
 - [ ] Retranscrire article
+- [ ] Contexte scientifique (Thèse)
+- [ ] Publication associée (Thèse)
+- [ ] Traduction du résumé de l'article publié (Thèse)
+- [x] Références
+- [x] Table
+- [x] Figures
+- [x] Box
+- [ ] keywords
 
 ## Chapitre 3
 
 - [ ] Retranscrire article
+- [ ] Contexte scientifique (Thèse)
+- [ ] Publication associée (Thèse)
+- [ ] Traduction du résumé de l'article publié (Thèse)
+- [ ] Références
+- [ ] keywords
+- [ ] Format table in appendice
 
 ## Chapitre 4
 

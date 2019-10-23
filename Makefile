@@ -21,7 +21,6 @@ CHP2 = chapitre2/chap2.tex
 CH2M = chapitre2/chap2.md
 ##-- Chapitre 3
 CHP3 = chapitre3/chap3.tex
-CH3M = chapitre3/chap3.md
 ##-- Chapitre 4
 CHP4 = chapitre4/chap4.tex
 CH4M = chapitre4/chap4.md
@@ -39,7 +38,6 @@ ANN2 = annexe2/annexe2.tex
 AN2M = annexe2/annexe2.md
 ##-- Annexe 3
 ANN3 = annexe3/annexe3.tex
-AN3M = annexe3/annexe3.md
 ##-- Annexe 4
 ANN4 = annexe4/annexe4.tex
 AN4M = annexe4/annexe4.md
@@ -102,10 +100,6 @@ $(CHP2): $(CH2M)
 	pandoc $< -o chapitre2/main.tex $(PFLAGS)
 	cat chapitre2/head.tex chapitre2/main.tex > $@
 
-$(CHP3): $(CH3M)
-	pandoc $< -o chapitre3/main.tex $(PFLAGS)
-	cat chapitre3/head.tex chapitre3/main.tex > $@
-
 $(CHP4): $(CH4M)
 	pandoc $< -o chapitre4/main.tex $(PFLAGS)
 	cat chapitre4/head.tex chapitre4/main.tex > $@
@@ -118,10 +112,6 @@ $(ANN1): $(AN1M)
 $(ANN2): $(AN2M)
 	pandoc $< -o annexe2/main.tex $(PFLAGS)
 	cat annexe2/head.tex annexe2/main.tex > $@
-
-$(ANN3): $(AN3M)
-	pandoc $< -o annexe3/main.tex $(PFLAGS)
-	cat annexe3/head.tex annexe3/main.tex > $@
 
 $(ANN4): $(AN4M)
 	pandoc $< -o annexe4/main.tex $(PFLAGS)
@@ -142,7 +132,7 @@ $(CHK): $(CHM)
 clean:
 	-rm *.aux *.bbl *.blg *.brf *.idx *.out *.toc *.lot *.lof *.log
 	-rm introduction/intro.tex conclusion/conclu.tex
-	-rm chapitre1/chap1.tex chapitre2/chap2.tex chapitre3/chap3.tex chapitre4/chap4.tex
-	-rm chapitre1/main.tex chapitre2/main.tex chapitre3/main.tex chapitre4/main.tex
-	-rm annexe1/annexe1.tex annexe2/annexe2.tex annexe3/annexe3.tex annexe4/annexe4.tex
-	-rm annexe1/main.tex annexe2/main.tex annexe3/main.tex annexe4/main.tex
+	-rm chapitre1/chap1.tex chapitre2/chap2.tex chapitre4/chap4.tex
+	-rm chapitre1/main.tex chapitre2/main.tex chapitre4/main.tex
+	-rm annexe1/annexe1.tex annexe2/annexe2.tex annexe4/annexe4.tex
+	-rm annexe1/main.tex annexe2/main.tex annexe4/main.tex

@@ -154,6 +154,34 @@
 \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
+% ----------------------------------------------------
+%% Ajouts D. Beauchesne
+% Landscape page
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+
+% Package for mathematical indicator function
+% Chapter 2 - Drivers
+ \usepackage{bbm}
+
+% Package for boxes
+% Chapter 2 - Drivers
+\usepackage{listings}
+\usepackage[svgnames]{xcolor}
+\usepackage{float}
+
+% Setting up parameters for code snippet presented in Box 1
+\lstset{language=R,
+    basicstyle=\small\ttfamily,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={fetchDrivers, install_github, getData, kde2d},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+  keywordstyle=\color{blue},
+  commentstyle=\color{DarkGreen},
+}
+% ----------------------------------------------------
 
 
 \captionsetup{singlelinecheck=false}
@@ -162,6 +190,8 @@
 % Taille des légendes des 'Long Tables'
 \setlength{\LTcapwidth}{\linewidth}
 % \setlength{\LTcapwidth}{1.5\linewidth}
+
+
 
 
 
