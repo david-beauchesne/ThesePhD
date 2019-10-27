@@ -1,3 +1,14 @@
+\blandscape
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{./timeline.png}
+\label{timeline}
+\end{figure}
+\elandscape
+\newpage
+
+
+
 # Checklist
 
 - [ ] Composition jury
