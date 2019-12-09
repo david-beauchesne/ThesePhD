@@ -41,30 +41,32 @@
 - [ ] Contexte scientifique (Thèse)
 - [ ] Publication associée (Thèse)
 - [ ] Traduction du résumé de l'article publié (Thèse)
-- [ ] Proposal letter Ecology Letters - Ideas and Perspectives
+- [X] Proposal letter Ecology Letters - Ideas and Perspectives
 - [ ] Cover letter and novelty statement
 - [x] Conflict of interest statement
 - [ ] Statement of authorship
 - [ ] Data accessibility statement
 - [ ] Reviewers
-- [ ] Keywords
-- [ ] Abstract
-- [ ] Introduction
-- [ ] Of food webs and multiple disturbances (concept)
-- [ ] Simulations
+- [X] Keywords
+- [X] Abstract
+- [X] Introduction
+- [X] Of food webs and multiple disturbances (concept)
+- [X] Simulations
 - [ ] Sensitivity
 - [ ] Amplification
 - [ ] Food web sensitivity & amplification
 - [ ] Conclusions
 - [ ] Acknowledgements
 - [ ] References
-- [ ] Figure 1 - Concept
-- [ ] Figure 2 - Sensitivity
-- [ ] Figure 3 - Amplification
-- [ ] Figure 4 - Food web scores table
-- [ ] Figure 5 - Topological ~ Realised scores
-- [ ] Figure 6 - Scores ~ Trophic level & degree
-- [ ] Table S1 - Systems of equations
+- [X] Figure 1 - Concept
+- [ ] Figure 2 - Vulnerability
+- [X] Figure 3 - Position vulnerability
+- [X] Figure 4 - Parameter type
+- [X] Figure 5 - Food web scores table
+- [X] Figure 6 - Species
+- [X] Table S1 - Systems of equations
+- [X] Figure S1 - Score table 2
+- [X] Figure S2 - Score table 3
 - [ ] Article formatting
 
 ## Chapitre 2
