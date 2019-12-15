@@ -24,6 +24,9 @@ CHP3 = chapitre3/chap3.tex
 ##-- Chapitre 4
 CHP4 = chapitre4/chap4.tex
 CH4M = chapitre4/chap4.md
+##-- Chapitre 5
+CHP5 = chapitre5/chap5.tex
+CH5M = chapitre5/chap5.md
 
 ##-- Conclusion
 CCTX = conclusion/conclu.tex
@@ -35,9 +38,9 @@ ANN1 = annexe1/annexe1.tex
 AN1M = annexe1/annexe1.md
 ##-- Annexe 2
 ANN2 = annexe2/annexe2.tex
-AN2M = annexe2/annexe2.md
 ##-- Annexe 3
 ANN3 = annexe3/annexe3.tex
+AN3M = annexe3/annexe3.md
 ##-- Annexe 4
 ANN4 = annexe4/annexe4.tex
 AN4M = annexe4/annexe4.md
@@ -73,7 +76,7 @@ PFLAGS = --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-eqnos -
 
 ALL: $(THES)
 
-$(THES): $(THTX) $(LIMI) $(INTH) $(ITTX) $(CCTX) $(REF) $(INLI) $(CHP1) $(CHP2) $(CHP3) $(CHP4) $(CHK) $(ANN1) $(ANN2) $(ANN3) $(ANN4)
+$(THES): $(THTX) $(LIMI) $(INTH) $(ITTX) $(CCTX) $(REF) $(INLI) $(CHP1) $(CHP2) $(CHP3) $(CHP4) $(CHP5) $(CHK) $(ANN1) $(ANN2) $(ANN3) $(ANN4)
 	pdflatex these
 	bibtex these
 	pdflatex these
@@ -104,14 +107,18 @@ $(CHP4): $(CH4M)
 	pandoc $< -o chapitre4/main.tex $(PFLAGS)
 	cat chapitre4/head.tex chapitre4/main.tex > $@
 
+$(CHP5): $(CH5M)
+	pandoc $< -o chapitre5/main.tex $(PFLAGS)
+	cat chapitre5/head.tex chapitre5/main.tex > $@
+
 ## -- Render annexes
 $(ANN1): $(AN1M)
 	pandoc $< -o annexe1/main.tex $(PFLAGS)
 	cat annexe1/head.tex annexe1/main.tex > $@
 
-$(ANN2): $(AN2M)
-	pandoc $< -o annexe2/main.tex $(PFLAGS)
-	cat annexe2/head.tex annexe2/main.tex > $@
+$(ANN3): $(AN3M)
+	pandoc $< -o annexe3/main.tex $(PFLAGS)
+	cat annexe3/head.tex annexe3/main.tex > $@
 
 $(ANN4): $(AN4M)
 	pandoc $< -o annexe4/main.tex $(PFLAGS)
@@ -132,7 +139,7 @@ $(CHK): $(CHM)
 clean:
 	-rm *.aux *.bbl *.blg *.brf *.idx *.out *.toc *.lot *.lof *.log
 	-rm introduction/intro.tex conclusion/conclu.tex
-	-rm chapitre1/chap1.tex chapitre2/chap2.tex chapitre4/chap4.tex
-	-rm chapitre1/main.tex chapitre2/main.tex chapitre4/main.tex
-	-rm annexe1/annexe1.tex annexe2/annexe2.tex annexe4/annexe4.tex
-	-rm annexe1/main.tex annexe2/main.tex annexe4/main.tex
+	-rm chapitre1/chap1.tex chapitre2/chap2.tex chapitre4/chap4.tex chapitre5/chap5.tex
+	-rm chapitre1/main.tex chapitre2/main.tex chapitre4/main.tex chapitre5/main.tex
+	-rm annexe1/annexe1.tex annexe3/annexe3.tex annexe4/annexe4.tex
+	-rm annexe1/main.tex annexe3/main.tex annexe4/main.tex

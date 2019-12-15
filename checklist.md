@@ -19,16 +19,28 @@
 - [ ] Résumé de la thèse (en)
 - [ ] Liste des abbréviations(?)
 - [ ] Introduction générale
-- [ ] Chapitre 1: Ecology Letters paper
+- [ ] Chapitre 1: Naturaliste Canadien - Cumulative impacts in the St. Lawrence
 - [ ] Chapitre 2: Frontiers in Marine Sciences - Drivers
-- [ ] Chapitre 3: iEat
-- [ ] Chapitre 4: Cumulative impacts on food webs
+- [ ] Chapitre 3: Milieu & VIE - iEat
+- [ ] Chapitre 4: Ecology Letters paper - Of food webs and multiple disturbances
+- [ ] Chapitre 5: Cumulative impacts on food webs
 - [ ] Conclusion générale
-- [ ] Annexe 1: Supplementary information chapitre 1
-- [ ] Annexe 2: Supplementary information chapitre 2
-- [ ] Annexe 3: Supplementary information chapitre 3
-- [ ] Annexe 4: Supplementary information chapitre 4
+- [ ] Annexe 1: Supplementary information chapitre 2
+- [ ] Annexe 2: Supplementary information chapitre 3
+- [ ] Annexe 3: Supplementary information chapitre 4
+- [ ] Annexe 4: Supplementary information chapitre 5
 - [ ] References
+
+## Composition jury
+
+Idées évaluateur externe
+
+- [ ] Isabelle Côté
+- [ ] Guy Woodward
+- [ ] Daniel Stouffer
+- [ ] Nathalie Ban
+- [ ] Kevin McCann
+- [ ] Tasman Crowe
 
 ## Introduction générale
 
@@ -37,6 +49,41 @@
 - [ ] Mettre à jour les objectifs de la thèse
 
 ## Chapitre 1
+
+- [ ] Retranscrire article
+- [ ] Contexte scientifique (Thèse)
+- [ ] Publication associée (Thèse)
+- [ ] Traduction du résumé de l'article publié (Thèse)
+- [x] Références
+- [x] Table
+- [x] Figures
+- [x] Box
+- [ ] keywords
+
+
+## Chapitre 2
+
+- [ ] Retranscrire article
+- [ ] Contexte scientifique (Thèse)
+- [ ] Publication associée (Thèse)
+- [ ] Traduction du résumé de l'article publié (Thèse)
+- [x] Références
+- [x] Table
+- [x] Figures
+- [x] Box
+- [ ] keywords
+
+## Chapitre 3
+
+- [ ] Retranscrire article
+- [ ] Contexte scientifique (Thèse)
+- [ ] Publication associée (Thèse)
+- [ ] Traduction du résumé de l'article publié (Thèse)
+- [ ] Références
+- [ ] keywords
+- [ ] Format table in appendice
+
+## Chapitre 4
 
 - [ ] Contexte scientifique (Thèse)
 - [ ] Publication associée (Thèse)
@@ -69,29 +116,7 @@
 - [X] Figure S2 - Score table 3
 - [ ] Article formatting
 
-## Chapitre 2
-
-- [ ] Retranscrire article
-- [ ] Contexte scientifique (Thèse)
-- [ ] Publication associée (Thèse)
-- [ ] Traduction du résumé de l'article publié (Thèse)
-- [x] Références
-- [x] Table
-- [x] Figures
-- [x] Box
-- [ ] keywords
-
-## Chapitre 3
-
-- [ ] Retranscrire article
-- [ ] Contexte scientifique (Thèse)
-- [ ] Publication associée (Thèse)
-- [ ] Traduction du résumé de l'article publié (Thèse)
-- [ ] Références
-- [ ] keywords
-- [ ] Format table in appendice
-
-## Chapitre 4
+## Chapitre 5
 
 - [ ] Données
 - [ ] Catalogue interactions
