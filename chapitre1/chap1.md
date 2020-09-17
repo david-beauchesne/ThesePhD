@@ -7,7 +7,7 @@ On the sensitivity of food webs to multiple stressors
 David Beauchesne, Kevin Cazelles, Philippe Archambault, Laura E. Dee, Dominique Gravel
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-# Abstract {-}
+# Abstract
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 Evaluating the effects of multiple stressors on ecosystems is becoming increasingly vital with global changes. The role of species interactions in propagating the effects of stressors, although widely acknowledged, has yet to be formally explored. Here, we conceptualize how stressors propagate through food webs and explore how they affect simulated 3-species motifs and food webs of the Canadian St. Lawrence System. We find that overlooking species interactions invariably underestimates the effects of stressors, and that synergistic and antagonistic effects through food webs are prevalent. We also find that interaction type influences a species’ susceptibility to stressors; species in omnivory and tri-trophic food chain interactions in particular are sensitive (weak entry points) and prone to synergistic (biotic amplifiers) and antagonistic (biotic buffers) effects. Finally, we find that apex predators were negatively affected and mesopredators benefited from the effects of stressors due to their trophic position in the St. Lawrence System, but that species sensitivity is dependent on food web structure. In conceptualizing the effects of multiple stressors on food webs, we bring theory closer to practice and show that considering the intricacies of ecological communities is key to assess the net effects of stressors on species.
