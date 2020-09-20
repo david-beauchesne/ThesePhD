@@ -87,6 +87,55 @@ Drivers selection was informed by a global cumulative impact assessment initiati
 
 We characterized the intensity and distribution of 22 drivers (Table \ref{ch4-t-drivers}). Drivers incorporated in the analyses are varied in origin, *i.e.*, from terrestrial (*e.g.*, nutrient input) to marine (*e.g.*, shipping), and from large scale biophysical processes (*e.g.*, temperature anomalies) to localized anthropogenic activities (*e.g.*, fisheries). Drivers were divided into four groups: coastal, climate, fisheries, and marine traffic (Table \ref{ch4-t-drivers}). All data layers and methodologies are described in the Supplementary Materials. As in @halpern2019, drivers with non-normal frequency distributions were log-transformed to avoid underestimating intermediate driver values. All drivers were scaled between 0 and 1 to allow comparisons. The 99th quantile of individual driver distribution was used as the upper limit for scaling to control for extreme values that may or may not represent real observations. The St. Lawrence System was divided into a regular grid of 1 $km^2$ cells into which all drivers were integrated (Figure \ref{ch4-drivers}).
 
+\begin{singlespace}
+
+{\fontsize{9}{11}\selectfont
+
+\begin{longtable}{ p{0.09\textwidth} p{0.14\textwidth} p{0.07\textwidth} p{0.095\textwidth} p{0.1\textwidth} p{0.09\textwidth} p{0.1\textwidth} p{0.15\textwidth} }
+\caption{List of drivers currently available on \textit{eDrivers} and used for the analyses presented in this paper.}
+\label{ch4-t-drivers}
+\tabularnewline
+
+  \toprule
+  Groups & Drivers & Acronym & Spatial resolution & Temporal resolution & Years & Units & Source \\
+  \hline \hline
+  \endfirsthead
+
+  \toprule
+  Groups & Drivers & Acronym & Spatial resolution & Temporal resolution & Years & Units & Source \\
+  \hline \hline
+  \endhead
+
+  Climate        &Acidification                               &ACID    &Lat/long            &August-September     &2018                        &$\Omega$ $Aragonite$ &\citet{starr2019} \\
+  Climate        &Hypoxia                                 &HYP     &Lat/long            &August-September     &2018                        &$ml$ $L^{-1}$ &\citet{blais2019} \\
+  Climate        &Bottom-water temperature                  &SBT-    &~2 $km^2$           &Monthly              &1981-2010 vs. 2013-2017     &negative anomalies  &\citet{galbraith2018} \\
+  Climate        &Bottom-water temperature                  &SBT+    &~2 $km^2$           &Monthly              &1981-2010 vs. 2013-2017     &positie anomalies &\citet{galbraith2018} \\
+  Climate        &Sea level rise                          &SLR     &Modeled 0.25 degree &10 days              &1992-2012                   &$mm$  &\citet{halpern2015} \\
+  Climate        &Surface-water temperature                 &SST-    &~2 $km^2$           &Monthly              &1981-2010 vs. 2013-2017     &negative anomalies  &\citet{galbraith2018} \\
+  Climate        &Surface-water temperature                 &SST+    &~2 $km^2$           &Monthly              &1981-2010 vs. 2013-2017     &positive anomalies  &\citet{galbraith2018} \\
+  Coastal        &Aquaculture                             &AQUA    &Lat/long            &-                    &Variable, between 1990-2016 &$presence-absence$ &\citet{mapaq2016, dfo2016a, aaf2016, fa2016, ffa2016} \\
+  Coastal        &Coastal development                     &CD      &15 arc-second       &Annual               &2015-2016                   &$nanoWatts$ $cm^{-2}$ $sr^{-1}$  &\citet{earthobservationgroup2019} \\
+  Coastal        &Direct human impact                     &DHI     &Dissemination areas &Annual               &2016                        &population &\citet{statistics-canada2017} \\
+  Coastal        &Inorganic pollution                     &IP      &Modeled 1 $km^2$    &Annual               &2000-2001                   &-  &\citet{halpern2015} \\
+  Coastal        &Nutrient import                         &NI      &Modeled 1 $km^2$    &Annual               &2007-2010                   &$t$ fertilizer &\citet{halpern2015} \\
+  Coastal        &Organic pollution                       &OP      &Modeled 1 $km^2$    &Annual               &2007-2010                   &$t$ pesticide  &\citet{halpern2015} \\
+  Coastal        &Toxic algae                             &TA      &-                   &-                    &-                           &Expert based &\citet{bates2019} \\
+  Fisheries      &Demersal, destructive                   &DD      &Lat/long            &Event based          &2010-2015                   &$kg$ &\citet{dfo2016} \\
+  Fisheries      &Demersal, non-destructive, high-bycatch &DNH     &Lat/long            &Event based          &2010-2015                   &$kg$ &\citet{dfo2016} \\
+  Fisheries      &Demersal, non-destructive, low-bycatch  &DNL     &Lat/long            &Event based          &2010-2015                   &$kg$ &\citet{dfo2016} \\
+  Fisheries      &Pelagic, high-bycatch                   &PHB     &Lat/long            &Event based          &2010-2015                   &$kg$ &\citet{dfo2016} \\
+  Fisheries      &Pelagic, low-bycatch                    &PLB     &Lat/long            &Event based          &2010-2015                   &$kg$ &\citet{dfo2016} \\
+  Marine traffic &Invasive species                        &INV     &Modeled 1 $km^2$    &Annual               &2011                        &$t$ port volume  &\citet{halpern2015} \\
+  Marine traffic &Marine pollution                        &MP      &Modeled 1 $km^2$    &Event based and annual &2003-2011 and 2011            &n lanes $t$ port volume  &\citet{halpern2015} \\
+  Marine traffic &Shipping                                &SHP     &0.1 degree          &Event based          &2003-2011                   &$n$ lanes  &\citet{halpern2015} \\
+
+
+  \bottomrule
+\end{longtable}
+}
+
+\end{singlespace}
+
 
 ## Cumulative exposure
 
@@ -110,7 +159,7 @@ where, $x$ is a grid cell, $i$ is a driver and $D$ is the scaled intensity of dr
 
 ### Clustering
 
-We identified areas with similar cumulative exposure profiles (objective 2) using a clustering approach [@bowler2019]. We used a partional *k-medoids$ clustering algorithm, CLARA [CLustering for Large Applications; @kaufman1990], which was designed for large datasets. The CLARA algorithm uses the PAM (Partition Around Medoids) algorithm on a sample from the original dataset to identify a set of k objects that are representative of all other objects, *i.e.*, *medoids* and that are central to the cluster they represent. The goal of the algorithm is to iteratively minimize intra-cluster dissimilarity. Iterations are compared on the basis of the average dissimilarity between cluster objects and representative *medoid* to select the optimal set of k *medoids* that minimizes average dissimilarity. We used the clustering algorithm with the Manhattan distance since this measure is less affected by extreme values [@legendre2012], as is the *k-medoids* clustering algorithm [@kaufman1990]. We used 100 iterations using samples of 10,000 observations (*i.e.*, ~5% of observations) to identify clusters. Analyses were performed using the cluster R package [@maechler2018]. Partitional clustering algorithms require a user-defined number of clusters. Values of k ranging from 2 to 10 were tested and validated by selecting the number of clusters that maximized the average silhouette width [@kaufman1990] and minimized the total within-cluster sum of squares (Figure \ref{ch4-valid}).
+We identified areas with similar cumulative exposure profiles (objective 2) using a clustering approach [@bowler2019]. We used a partional $k-medoids$ clustering algorithm, CLARA [CLustering for Large Applications; @kaufman1990], which was designed for large datasets. The CLARA algorithm uses the PAM (Partition Around Medoids) algorithm on a sample from the original dataset to identify a set of $k$ objects that are representative of all other objects, *i.e.*, *medoids* and that are central to the cluster they represent. The goal of the algorithm is to iteratively minimize intra-cluster dissimilarity. Iterations are compared on the basis of the average dissimilarity between cluster objects and representative *medoid* to select the optimal set of $k$ *medoids* that minimizes average dissimilarity. We used the clustering algorithm with the Manhattan distance since this measure is less affected by extreme values [@legendre2012], as is the *k-medoids* clustering algorithm [@kaufman1990]. We used 100 iterations using samples of 10,000 observations (*i.e.*, ~5% of observations) to identify clusters. Analyses were performed using the cluster R package [@maechler2018]. Partitional clustering algorithms require a user-defined number of clusters. Values of k ranging from 2 to 10 were tested and validated by selecting the number of clusters that maximized the average silhouette width [@kaufman1990] and minimized the total within-cluster sum of squares (Figure \ref{ch4-valid}).
 
 
 ### Inter-cluster dissimilarity
@@ -130,7 +179,7 @@ Intra-cluster similarity was evaluated calculating the intracluster Manhattan di
 
 We first present the simplified hypoxia-fisheries example to demonstrate how driver co-occurrence was evaluated. Hypoxic bottom waters area mainly found at the head of the Laurentian, Anticosti, and Esquiman channels (Figure \ref{ch4-kernel}A). Demersal destructive fisheries are concentrated along the Laurentian Channel, the heads of the Anticosti and Esquiman channels and around the Îles de la Madeleine (Figure \ref{ch4-kernel}B). By combining both drivers, we observe that hypoxia and demersal destructive fisheries co-occur mostly at high relative intensity (Figure \ref{ch4-kernel}D) in the vicinity of the Anticosti Gyre and the heads of the Esquiman and Anticosti channels (Figure \ref{ch4-kernel}C); these are the areas where we might expect interactions between these drivers to be more likely.
 
-We now focus on the integrative exposure indicators. Apart from the northeastern Gulf, cumulative exposure is ubiquitous in the St. Lawrence (Figure \ref{ch4-footprint}). Cumulative exposure is generally highest along coasts (Figure \ref{ch4-footprint}), with hotspots located in the vicinity of coastal cities (Figure \ref{ch4-hotspot}). In general, offshore areas are less exposed to cumulative drivers, with the Estuary and the Anticosti Gyre being notable exceptions (Figures \ref{footprint}, \ref{hotspot}). This is not to say that offshore areas are free from exposure, as most of the St. Lawrence is exposed to multiple overlapping drivers (Figures \ref{footprint}, \ref{hotspot}). For example, the heads of the Anticosti and Esquiman channels are highly exposed to cumulative drivers (Figure \ref{ch4-footprint}).
+We now focus on the integrative exposure indicators. Apart from the northeastern Gulf, cumulative exposure is ubiquitous in the St. Lawrence (Figure \ref{ch4-footprint}). Cumulative exposure is generally highest along coasts (Figure \ref{ch4-footprint}), with hotspots located in the vicinity of coastal cities (Figure \ref{ch4-hotspot}). In general, offshore areas are less exposed to cumulative drivers, with the Estuary and the Anticosti Gyre being notable exceptions (Figures \ref{ch4-footprint}, \ref{ch4-hotspot}). This is not to say that offshore areas are free from exposure, as most of the St. Lawrence is exposed to multiple overlapping drivers (Figures \ref{ch4-footprint}, \ref{ch4-hotspot}). For example, the heads of the Anticosti and Esquiman channels are highly exposed to cumulative drivers (Figure \ref{ch4-footprint}).
 
 These results are consistent with observations elsewhere in the world, where cumulative exposure conspicuously arises from and markedly intensifies close to coastal cities and at the mouth of rivers draining highly populated areas [*e.g.*, @halpern2015a; @feist2016; @mach2017; @stock2018]. These are areas where human activities (*e.g.*, coastal development and shipping) and footprints (*e.g.*, pollution runoff) are most intense [@feist2016], and on which is overlaid a background of natural disturbances [@micheli2016]. They are also the areas in which the most dramatic increases in exposure are expected, with populations increasing more rapidly along coasts than inland [@feist2016]. In the St. Lawrence, large coastal cities are mostly located along the Estuary and the southwestern Gulf, whereas the northeastern Gulf is largely uninhabited or home to small coastal communities. Certain smaller coastal communities with high cumulative exposure are characterized by large industries (*e.g.*, Sept-Îles and Charlottetown).
 
@@ -166,7 +215,7 @@ Whereas, we cannot ascertain that high exposure areas are the most impacted, we 
 
 While informative, the hypoxia-fisheries example focuses on a single pair of drivers and falls short of the number of drivers typically overlapping at high intensities throughout the St. Lawrence (Figure \ref{ch4-hotspot}). The number of drivers overlapping in the St. Lawrence increases with cumulative exposure (Figure \ref{ch4-marimekko}). Areas with high exposure such as the Estuary, the Anticosti Gyre, and the southwestern Gulf coastline (Figures \ref{ch4-footprint}, \ref{ch4-hotspot}) are thus areas where driver interactions are most likely and where they can arise between a host of different drivers. Identifying areas with similar cumulative exposure profiles provides a crucial tool to simplify the multi-dimensional complexity of overlapping drivers [@bowler2019]. This could facilitate assessments of the state of species, habitats, and ecosystems located within or moving through areas exposed to similar suites of drivers.
 
-Six distinct clusters were identified in the St. Lawrence (Figure \ref{ch4-cluster}, Figures \ref{ch4-marimekko}, \ref{ch4-validation}). Based on their distribution and representative drivers, clusters can be divided into three offshore and three coastal clusters (Figure \ref{ch4-cluster}, Figures \ref{ch4-inter}, \ref{ch4-intra}). Coastal clusters (1–3; Figure \ref{ch4-cluster}) include all types of drivers other than hypoxia; they are also the most exposed clusters, both in terms of driver overlap and intensity. Cluster 1 encompasses the coastline and is characterized by higher direct human impact (*i.e.*, population density). Cluster 2 is differentiated from other clusters by the presence of aquaculture sites. Cluster 3 is the most exposed and has a distribution similar to the most exposed coastal hotspots (Figure \ref{ch4-hotspot}). This cluster is characterized by high intensities of land-based drivers (*e.g.*, nutrient input), demersal non-destructive high bycatch fisheries (*e.g.*, trap fishing), climate drivers and marine traffic drivers in the vicinity of ports.
+Six distinct clusters were identified in the St. Lawrence (Figure \ref{ch4-cluster}, \ref{ch4-marimekko}, \ref{ch4-valid}). Based on their distribution and representative drivers, clusters can be divided into three offshore and three coastal clusters (Figure \ref{ch4-cluster}, \ref{ch4-inter}, \ref{ch4-intra}). Coastal clusters (1–3; Figure \ref{ch4-cluster}) include all types of drivers other than hypoxia; they are also the most exposed clusters, both in terms of driver overlap and intensity. Cluster 1 encompasses the coastline and is characterized by higher direct human impact (*i.e.*, population density). Cluster 2 is differentiated from other clusters by the presence of aquaculture sites. Cluster 3 is the most exposed and has a distribution similar to the most exposed coastal hotspots (Figure \ref{ch4-hotspot}). This cluster is characterized by high intensities of land-based drivers (*e.g.*, nutrient input), demersal non-destructive high bycatch fisheries (*e.g.*, trap fishing), climate drivers and marine traffic drivers in the vicinity of ports.
 
 Offshore clusters (4–6; Figure \ref{ch4-cluster}) are generally characterized by high intensity climate and marine traffic drivers. Cluster 4 is differentiated by demersal non-destructive high bycatch fisheries, higher marine traffic drivers compared to cluster 5, and generally corresponds to the whole Southern Gulf. Cluster 5 is characterized by more fisheries types (*i.e.*, demersal destructive and pelagic high bycatch), generally lower intensity marine traffic drivers, and is located almost exclusively in the Northern Gulf. Finally, cluster 6 is the most exposed offshore cluster and includes all offshore hotspots (Figure \ref{ch4-hotspot}). It is characterized by high intensity hypoxia, marine traffic and pollution, as well as demersal destructive and pelagic high bycatch fisheries. This cluster corresponds primarily to the Laurentian Channel and incorporates parts of the Esquiman and Anticosti channels.
 
@@ -352,42 +401,6 @@ plot(density(drivers$Hypoxia[id0]))
 \end{lstlisting}
 \end{singlespace}
 
-\newpage
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-# Tables
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-<!-- \begin{singlespace} -->
-
-Table: List of drivers currently available on *eDrivers* and used for the analyses presented in this paper.
-
-|Groups         |Drivers                                 |Acronym |Spatial resolution  |Temporal resolution  |Years                       |Units |Source                                               |
-|:--------|:-------------|:-------|:----------|:----------|:----------|:----------|:--------------------|
-|Climate        |Aragonite                               |ACID    |Lat/long            |August-September     |2018                        |$\Omega$ $Aragonite$ |[@starr2019]                                         |
-|Climate        |Hypoxia                                 |HYP     |Lat/long            |August-September     |2018                        |$ml$ $L^{-1}$ |[@blais2019]                                         |
-|Climate        |Sea bottom temperature                  |SBT-    |~2 $km^2$           |Monthly              |1981-2010 vs. 2013-2017     |negative anomalies  |[@galbraith2018]                                     |
-|Climate        |Sea bottom temperature                  |SBT+    |~2 $km^2$           |Monthly              |1981-2010 vs. 2013-2017     |positie anomalies |[@galbraith2018]                                     |
-|Climate        |Sea level rise                          |SLR     |Modeled 0.25 degree |10 days              |1992-2012                   |$mm$  |[@halpern2015]                                       |
-|Climate        |Sea surface temperature                 |SST-    |~2 $km^2$           |Monthly              |1981-2010 vs. 2013-2017     |negative anomalies  |[@galbraith2018]                                     |
-|Climate        |Sea surface temperature                 |SST+    |~2 $km^2$           |Monthly              |1981-2010 vs. 2013-2017     |positive anomalies  |[@galbraith2018]                                     |
-|Coastal        |Aquaculture                             |AQUA    |Lat/long            |-                    |Variable, between 1990-2016 |$presence-absence$ |[@mapaq2016; @dfo2016a; @aaf2016; @fa2016; @ffa2016] |
-|Coastal        |Coastal development                     |CD      |15 arc-second       |Annual               |2015-2016                   |$nanoWatts$ $cm^{-2}$ $sr^{-1}$  |[@earthobservationgroup2019]                         |
-|Coastal        |Direct human impact                     |DHI     |Dissemination areas |Annual               |2016                        |population |[@statistics-canada2017]                             |
-|Coastal        |Inorganic pollution                     |IP      |Modeled 1 $km^2$    |Annual               |2000-2001                   |-  |[@halpern2015]                                       |
-|Coastal        |Nutrient import                         |NI      |Modeled 1 $km^2$    |Annual               |2007-2010                   |$t$ fertilizer |[@halpern2015]                                       |
-|Coastal        |Organic pollution                       |OP      |Modeled 1 $km^2$    |Annual               |2007-2010                   |$t$ pesticide  |[@halpern2015]                                       |
-|Coastal        |Toxic algae                             |TA      |-                   |-                    |-                           |Expert based |[@bates2019]                                         |
-|Fisheries      |Demersal, destructive                   |DD      |Lat/long            |Event based          |2010-2015                   |$kg$ |[@dfo2016]                                           |
-|Fisheries      |Demersal, non-destructive, high-bycatch |DNH     |Lat/long            |Event based          |2010-2015                   |$kg$ |[@dfo2016]                                           |
-|Fisheries      |Demersal, non-destructive, low-bycatch  |DNL     |Lat/long            |Event based          |2010-2015                   |$kg$ |[@dfo2016]                                           |
-|Fisheries      |Pelagic, high-bycatch                   |PHB     |Lat/long            |Event based          |2010-2015                   |$kg$ |[@dfo2016]                                           |
-|Fisheries      |Pelagic, low-bycatch                    |PLB     |Lat/long            |Event based          |2010-2015                   |$kg$ |[@dfo2016]                                           |
-|Marine traffic |Invasive species                        |INV     |Modeled 1 $km^2$    |Annual               |2011                        |$t$ port volume  |[@halpern2015]                                       |
-|Marine traffic |Marine pollution                        |MP      |Modeled 1 $km^2$    |Event based & annual |2003-2011 & 2011            |$n$ lanes + $t$ port volume  |[@halpern2015]                                       |
-|Marine traffic |Shipping                                |SHP     |0.1 degree          |Event based          |2003-2011                   |$n$ lanes  |[@halpern2015]                                       |
-<!-- \end{singlespace} -->
-\newpage
 
 # Supplementary material
 
@@ -395,34 +408,53 @@ Table: List of drivers currently available on *eDrivers* and used for the analys
 
 \begin{singlespace}
 
-Table: List of drivers currently available on *eDrivers* along with their respective acronym used in the figures in the supplementary material.
+{\fontsize{9}{11}\selectfont
 
-|Groups         |Drivers                                 |Acronym |Source                                               |
-|:--------|:---------------|:----------|:--------------------|
-|Climate        |Acidification                           |ACID    |[@starr2019]                                         |
-|Climate        |Hypoxia                                 |HYP     |[@blais2019]                                         |
-|Climate        |Bottom-water temperature                  |SBT-    |[@galbraith2018]                                     |
-|Climate        |Bottom-water temperature                  |SBT+    |[@galbraith2018]                                     |
-|Climate        |Sea level rise                          |SLR     |[@halpern2015]                                       |
-|Climate        |Surface-water temperature                 |SST-    |[@galbraith2018]                                     |
-|Climate        |Surface-water temperature                 |SST+    |[@galbraith2018]                                     |
-|Coastal        |Aquaculture                             |AQUA    |[@mapaq2016; @dfo2016a; @aaf2016; @fa2016; @ffa2016] |
-|Coastal        |Coastal development                     |CD      |[@earthobservationgroup2019]                         |
-|Coastal        |Direct human impact                     |DHI     |[@statistics-canada2017]                             |
-|Coastal        |Inorganic pollution                     |IP      |[@halpern2015]                                       |
-|Coastal        |Nutrient import                         |NI      |[@halpern2015]                                       |
-|Coastal        |Organic pollution                       |OP      |[@halpern2015]                                       |
-|Coastal        |Toxic algae                             |TA      |[@bates2019]                                         |
-|Fisheries      |Demersal, destructive                   |DD      |[@dfo2016]                                           |
-|Fisheries      |Demersal, non-destructive, high-bycatch |DNH     |[@dfo2016]                                           |
-|Fisheries      |Demersal, non-destructive, low-bycatch  |DNL     |[@dfo2016]                                           |
-|Fisheries      |Pelagic, high-bycatch                   |PHB     |[@dfo2016]                                           |
-|Fisheries      |Pelagic, low-bycatch                    |PLB     |[@dfo2016]                                           |
-|Marine traffic |Invasive species                        |INV     |[@halpern2015]                                       |
-|Marine traffic |Marine pollution                        |MP      |[@halpern2015]                                       |
-|Marine traffic |Shipping                                |SHP     |[@halpern2015]                                       |
+\begin{longtable}{ p{0.15\textwidth} p{0.25\textwidth} p{0.12\textwidth} p{0.25\textwidth} }
+\caption{List of drivers currently available on \textit{eDrivers} along with their respective acronym used in the figures in the supplementary material.}
+\label{ch4-t-driversSupp}
+\tabularnewline
+
+  \toprule
+  Groups & Drivers & Acronym & Source \\
+  \hline \hline
+  \endfirsthead
+
+  \toprule
+  Groups & Drivers & Acronym & Source \\
+  \hline \hline
+  \endhead
+
+  Climate        &Acidification                           &ACID    &\citet{starr2019} \\
+  Climate        &Hypoxia                                 &HYP     &\citet{blais2019} \\
+  Climate        &Bottom-water temperature                &SBT-    &\citet{galbraith2018} \\
+  Climate        &Bottom-water temperature                &SBT+    &\citet{galbraith2018} \\
+  Climate        &Sea level rise                          &SLR     &\citet{halpern2015} \\
+  Climate        &Surface-water temperature               &SST-    &\citet{galbraith2018} \\
+  Climate        &Surface-water temperature               &SST+    &\citet{galbraith2018} \\
+  Coastal        &Aquaculture                             &AQUA    &\citet{mapaq2016, dfo2016a, aaf2016, fa2016, ffa2016} \\
+  Coastal        &Coastal development                     &CD      &\citet{earthobservationgroup2019} \\
+  Coastal        &Direct human impact                     &DHI     &\citet{statistics-canada2017} \\
+  Coastal        &Inorganic pollution                     &IP      &\citet{halpern2015} \\
+  Coastal        &Nutrient import                         &NI      &\citet{halpern2015} \\
+  Coastal        &Organic pollution                       &OP      &\citet{halpern2015} \\
+  Coastal        &Toxic algae                             &TA      &\citet{bates2019} \\
+  Fisheries      &Demersal, destructive                   &DD      &\citet{dfo2016} \\
+  Fisheries      &Demersal, non-destructive, high-bycatch &DNH     &\citet{dfo2016} \\
+  Fisheries      &Demersal, non-destructive, low-bycatch  &DNL     &\citet{dfo2016} \\
+  Fisheries      &Pelagic, high-bycatch                   &PHB     &\citet{dfo2016} \\
+  Fisheries      &Pelagic, low-bycatch                    &PLB     &\citet{dfo2016} \\
+  Marine traffic &Invasive species                        &INV     &\citet{halpern2015} \\
+  Marine traffic &Marine pollution                        &MP      &\citet{halpern2015} \\
+  Marine traffic &Shipping                                &SHP     &\citet{halpern2015} \\
+
+
+  \bottomrule
+\end{longtable}
+}
 
 \end{singlespace}
+
 
 ### Climate
 
@@ -781,7 +813,7 @@ targeted species and a total of 53 species caught in the dataset.
 Fishing activities are performed using a variety of gear types: trap, trawl,
 dredge, driftnet, hand line, longline, scuba diving, purse seine, seine, beach
 seine and jig fishing. Intensity of fishing activities was divided among gear
-types and based on their respective types of environmental impacts (Table \ref{fish}).
+types and based on their respective types of environmental impacts (Table \ref{ch4-t-gear}).
 For example, traps and trawls have very different effects on a system. Gear
 classification was done using the classification presented in @halpern2008a and
 @halpern2015 and is broken down into 5 distinct classes: demersal destructive
@@ -800,24 +832,37 @@ fixed and mobile engine was of 200 and 2000 meters, respectively.
 
 \begin{singlespace}
 
-Table: Classification of gear types in the fisheries dataset based on their
-environmental impact and mobility. 
+\begin{longtable}{ p{0.23\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+\caption{Classification of gear types in the fisheries dataset based on their
+environmental impact and mobility.}
+\label{ch4-t-gear}
+\tabularnewline
 
-Gear type (EN)    | Classification    | Mobility
---------------    | --------------    | --------
-Trap              | DNH               | Fixed
-Trawl             | DD                | Mobile
-Dredge            | DD                | Mobile
-Driftnet          | PHB               | Fixed
-Hand lines        | PLB               | Fixed
-Longline          | PHB               | Fixed
-Scuba diving      | DNL               | Fixed
-Purse seine       | PLB               | Fixed
-Seine             | DNH               | Fixed
-Beach seine       | DNH               | Fixed
-Trap              | DNH               | Fixed
-Jig fishing       | PLB               | Fixed
+\toprule
+Gear type & Classification & Mobility \\
+\hline
+\endfirsthead
 
+\toprule
+Gear type & Classification & Mobility \\
+\hline
+\endhead
+
+Trap              & DNH               & Fixed \\
+Trawl             & DD                & Mobile \\
+Dredge            & DD                & Mobile \\
+Driftnet          & PHB               & Fixed \\
+Hand lines        & PLB               & Fixed \\
+Longline          & PHB               & Fixed \\
+Scuba diving      & DNL               & Fixed \\
+Purse seine       & PLB               & Fixed \\
+Seine             & DNH               & Fixed \\
+Beach seine       & DNH               & Fixed \\
+Trap              & DNH               & Fixed \\
+Jig fishing       & PLB               & Fixed \\
+
+\bottomrule
+\end{longtable}
 \end{singlespace}
 
 To characterize the intensity of fishing activities ($FI$), we used

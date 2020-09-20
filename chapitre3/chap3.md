@@ -236,7 +236,7 @@ Le potentiel d'exploitation des ressources fait du
 Saint-Laurent un vecteur économique d'une importance
 capitale pour le Québec et le Canada. Les principales activités
 économiques sont la pêche commerciale, le transport
-maritime, le tourisme et l'aquaculture (tableau 1). Les pêches
+maritime, le tourisme et l'aquaculture (Tableau \ref{ch3-tbl1}). Les pêches
 commerciales et récréatives touchent, dans le Saint-Laurent,
 une cinquantaine d'espèces incluant les poissons de fond,
 les poissons pélagiques, les mollusques et les crustacés, de
@@ -287,6 +287,68 @@ fonctionnement des écosystèmes du Saint-Laurent et pourraient
 exacerber l'impact de stresseurs déjà observés dans le Saint-
 Laurent comme les anomalies de températures de surface [@dufour2007].
 
+
+\begin{singlespace}
+\begin{center}
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}{ p{0.2\textwidth} p{0.29\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} p{0.003\textwidth} }
+\caption{Principales activités humaines au sein de l'EGSL décrites en fonction des stresseurs environnementaux qui leur sont associés \citep[inspiré de][]{dufour2007, benoit2012}. Ne sont pas présentes dans ce tableau les boucles de rétroaction à travers lesquelles un stresseur peut affecter une autre activité humaine, telle que l'hypoxie qui influence la distribution des ressources halieutiques et ainsi les activités de pêche commerciale.}
+\label{ch3-tbl1}
+\tabularnewline
+
+ \toprule
+ & & \multicolumn{16}{c}{Stress environnementaux} \\
+ Activité & Sous-activité & \rotatebox{90}{Acidification} & \rotatebox{90}{Apports d'eau douce} & \rotatebox{90}{Collisions} & \rotatebox{90}{Contaminants} & \rotatebox{90}{Courants/masses d'eau} & \rotatebox{90}{Déchets/eaux usées} & \rotatebox{90}{Destruction de l'habitat} & \rotatebox{90}{Déversements accidentels hydrocarbures} & \rotatebox{90}{Éléments nutritifs/déchets organiques} & \rotatebox{90}{Élimination en mer} & \rotatebox{90}{Espèces envahissantes} & \rotatebox{90}{Hypoxie} & \rotatebox{90}{Obstruction du courant} & \rotatebox{90}{Parasites/maladies} & \rotatebox{90}{Perturbation/dérangement} & \rotatebox{90}{Prélèvement de la biomasse} \\
+ \midrule
+ \endfirsthead
+
+ \toprule
+ & & \multicolumn{16}{c}{Stress environnementaux} \\
+ Activité & Sous-activité & \rotatebox{90}{Acidification} & \rotatebox{90}{Apports d'eau douce} & \rotatebox{90}{Collisions} & \rotatebox{90}{Contaminants} & \rotatebox{90}{Courants/masses d'eau} & \rotatebox{90}{Déchets/eaux usées} & \rotatebox{90}{Destruction de l'habitat} & \rotatebox{90}{Déversements accidentels hydrocarbures} & \rotatebox{90}{Éléments nutritifs/déchets organiques} & \rotatebox{90}{Élimination en mer} & \rotatebox{90}{Espèces envahissantes} & \rotatebox{90}{Hypoxie} & \rotatebox{90}{Obstruction du courant} & \rotatebox{90}{Parasites/maladies} & \rotatebox{90}{Perturbation/dérangement} & \rotatebox{90}{Prélèvement de la biomasse} \\
+ \midrule
+ \endhead
+
+
+ \multirow[t]{2}{0.14\textwidth}{Pêche} & Pêche commerciale et récréative &  & & & & & X & X & X & & & & & & X & X \\
+  & Usines de transformation & & & & & & X & & & & & X & & & X & & \\
+ \midrule
+
+ Aquaculture$^*$ & & & & & & & & & & X & & X & & X & X & & \\
+ \midrule
+
+ \multirow[t]{4}{0.14\textwidth}{Transport maritime} & Entretiens des voies navigables$^*$ & & X & & X & & & X & & & X & & & & & X & \\
+ & Transport de marchandises et de personnes$^*$ &&&X&X&&X&&X&&&X&&&&X& \\
+ & Transport relié aux activités de pêche &&&X&X&&X&&X&&&&&&&X& \\
+ & Infrastructures portuaires$^*$ &&&&&&&X&&&&&&X&&& \\
+ \midrule
+
+ Production hydroélectrique & Modification du bassin versant &X&X&&X&&&&&X&&&X&&&& \\
+ \midrule
+
+ \multirow[t]{3}{0.14\textwidth}{Activités en milieu terrestre} & Établissements humains &X&&&&X&X&X&X&X&&&X&X&X&X& \\
+ & Activités industrielles &X&&&X&&X&&&X&&&X&&&& \\
+ & Agriculture &X&X&&X&&X&&&X&&&X&&&& \\
+ \midrule
+
+ \multirow[t]{3}{0.14\textwidth}{Industrie pétrolière et gazière en mer} & Prospection sismique &&&&&&&&&&&&&&&X& \\
+ & Forage exploratoire &&&&&&&X&&&&&&&&X&\\
+ & Exploitation$^{**}$ &X&&&X&&X&X&X&X&&&X&&&X& \\
+ \midrule
+
+ \multirow[t]{2}{0.14\textwidth}{Tourisme} & Aménagement côtier &&&&X&&X&X&X&&&&&&&X& \\
+ & Navigation de plaisance$^*$ &&&X&X&&X&&X&&&X&&&&X& \\
+ \bottomrule
+ \multicolumn{18}{l}{$^*$Activités ou sous-activités pour lesquelles une intensification est prévisible dans un futur rapproché} \\
+ \multicolumn{18}{l}{$^**$Activités ou sous-activités émergentes}
+ \label{ch3-stressors}
+
+\end{longtable}
+}
+\end{center}
+\end{singlespace}
+
+
 # Impacts combinés de multiples stresseurs environnementaux
 
 L'étendue spatiotemporelle et le chevauchement
@@ -296,10 +358,10 @@ ressources et de processus écologiques [@macdonald2000].
 D'abord, l'ensemble des activités humaines pratiquées dans le
 Saint-Laurent peut perturber directement et de plusieurs façons la
 biodiversité, par exemple la destruction de l'habitat et l'extraction
-de biomasse par la pêche (tableau 1). De plus, plusieurs activités
+de biomasse par la pêche (Tableau \ref{ch3-tbl1}). De plus, plusieurs activités
 humaines peuvent être à la source de stress indirect, comme le
 dérangement engendré par le trafic maritime et l'exploitation
-des hydrocarbures (tableau 1). Même individuellement, chaque
+des hydrocarbures (Tableau \ref{ch3-tbl1}). Même individuellement, chaque
 stresseur peut affecter la structure et le fonctionnement des
 écosystèmes [@jackson2001; @steffen2007].
 Ainsi, la surpêche a entraîné une chute du stock de poissons
@@ -563,7 +625,7 @@ conjointement. De plus, les outils diagnostiques proposés ne
 seront vraisemblablement pas développés à court terme. Dans
 l'intérim, il importe alors d'employer des mesures de gestion
 robustes face à l'incertitude associée aux effets de multiples
-stresseurs sur les milieux naturels (@cote2016). Nous
+stresseurs sur les milieux naturels [@cote2016]. Nous
 suggérons ainsi de développer une capacité de gestion adaptative
 conséquente à une approche de gestion écosystémique
 [p. ex. @rice2005] permettant de considérer les
@@ -608,15 +670,3 @@ en sciences naturelles et en génie du Canada (CRSNG) pour
 l'aide financière. Ce projet est soutenu par Québec-Océan, le
 réseau Notre Golfe, le Centre de la Science de la Biodiversité du
 Québec (CSBQ) et le réseau CHONeII.
-
-
-
-
-\newpage
-
-
-
-Tableau 1. Principales activités humaines au sein de l'EGSL décrites en fonction des stresseurs environnementaux qui leur sont
-associés [inspiré de @dufour2007; @benoit2012]. Ne sont pas présentes dans ce tableau les boucles
-de rétroaction à travers lesquelles un stresseur peut affecter une autre activité humaine, telle que l'hypoxie qui influence
-la distribution des ressources halieutiques et ainsi les activités de pêche commerciale.

@@ -155,7 +155,7 @@ The partitioning of the catalogue and predictive portions of the algorithm revea
 
 
     \subsection{Southern Gulf of St. Lawrence}
-As an example, we predict interactions in the southern Gulf of St. Lawrence (SGSL) in eastern Canada. The empirical data and taxa list come from \citet{savenkoff2004}. They present a list of 29 functional groups for a total of 80 taxa presented at least at taxonomical scale of the family. Other coarser functional groups were not used for this example (see Table S1 in Supplementary information (SI) and \citet{savenkoff2004} for a complete description of documented groups).
+As an example, we predict interactions in the southern Gulf of St. Lawrence (SGSL) in eastern Canada. The empirical data and taxa list come from \citet{savenkoff2004}. They present a list of 29 functional groups for a total of 80 taxa presented at least at taxonomical scale of the family. Other coarser functional groups were not used for this example (see Table \ref{ch2-tbl1} in Supplementary information (SI) and \citet{savenkoff2004} for a complete description of documented groups).
 We used the algorithm to predict interactions between all 80 taxa selected. As their interaction data are reported for functional groups rather than taxa, we then aggregated them back to their original functional groups to compare with interactions presented in \citet{savenkoff2004}. In total, there were empirical data available in the catalogue for 78\% of SGSL taxa (62/80). The algorithm correctly predicted close to 80\% of interactions ($a$ = 135/170) and non-interactions ($d$ = 354/455) extracted from \citet{savenkoff2004}. It also predicted an additional 101 interactions that were not noted in \citet{savenkoff2004} and failed to predict 36 observed interactions that were, resulting in a TSS score of 0.57. A visual comparison of results obtained from the algorithm with interactions noted in \citet{savenkoff2004} is available at Figure \ref{fig:SGSL}. The network presented is centered on the observed and predicted interactions of the capelin (\textit{Mallotus villosus}) and piscivorous small pelagic feeders (e.g. \textit{Scomber scombrus} and \textit{Illex illecebrosus}).
 
 % SGSL accuracy results
@@ -186,9 +186,9 @@ We found that taxonomy can be highly useful in complementing predictions made us
 That $Score_{y}$ and $Score_{\neg y}$ are inversely proportional means that non-interactions are misclassified as interactions in the process of increasing $Score_y$, consequently decreasing $Score_{\neg y}$. This could either stem from the algorithm poorly predicting non-interactions or from the empirical data itself. Accuracy evaluation assumes that non-interactions from empirical food web are observed data, yet it is usually not the case. Most empirical webs have a strong focus attributed to higher order consumer species and often uneven effort made to thoroughly detail species interactions (\cite{dunne2006}). Furthermore, the methodologies used to obtain consumer-resource data, often relying on gut content analyses, which is efficient at observing interactions, may be inefficient to detect absence of interactions in natural systems (\cite{dunne2006}). This is especially true with our methodology, where we predict interactions between species whose co-occurrence may have been observed in the other ecosystems we are using to predict interactions. Misclassified interactions could thus be real, albeit unobserved through empirical data available.
 
 \subsection{Southern Gulf of St. Lawrence}
-The St Lawrence example (Figure \ref{fig:SGSL} and SI) provides adequate material to discuss predictions in greater detail. The algorithm fails to predict 20\% of interactions presented in \citet{savenkoff2004}. Interactions that failed to be predicted were mainly centered on invertebrate species (e.g. polychaetes and mollusks) and taxonomically diverse functional groups described by coarse taxonomic categories (e.g. diatoms) alongside few species in \citet{savenkoff2004} (e.g. piscivorous small pelagic feeders; Table S3). As we focused on the taxa at least at the scale of family, it is likely that their functional groups had a broader range of possible interactions included than what the algorithm could predict using only a few taxa. Furthermore, the efficiency of the algorithm greatly depends on the underlying empirical data that defines the catalogue. If the empirical data used to build the catalogue focuses on higher order consumers, it should come as no surprise that the algorithm would be afflicted by the same limitations.
+The St Lawrence example (Figure \ref{fig:SGSL} and SI) provides adequate material to discuss predictions in greater detail. The algorithm fails to predict 20\% of interactions presented in \citet{savenkoff2004}. Interactions that failed to be predicted were mainly centered on invertebrate species (e.g. polychaetes and mollusks) and taxonomically diverse functional groups described by coarse taxonomic categories (e.g. diatoms) alongside few species in \citet{savenkoff2004} (e.g. piscivorous small pelagic feeders; Table \ref{ch2-tbl2}). As we focused on the taxa at least at the scale of family, it is likely that their functional groups had a broader range of possible interactions included than what the algorithm could predict using only a few taxa. Furthermore, the efficiency of the algorithm greatly depends on the underlying empirical data that defines the catalogue. If the empirical data used to build the catalogue focuses on higher order consumers, it should come as no surprise that the algorithm would be afflicted by the same limitations.
 
-On the other hand, the algorithm also predicts substantially more interactions than those presented in \citet{savenkoff2004} (Figure \ref{fig:SGSL}; Table S2).  For instance, an important number of additional interactions were predicted for small piscivorous pelagic feeders as consumers (Figure \ref{fig:SGSL}). When considering that these species are typically considered as resources, it should be unsurprising that the broad range of interactions composing the catalogue and from which predictions are made results in new consumer interactions being predicted for those species. An ecological interpretation can therefore be easily provided to explain these additional interactions, such as small piscivorous pelagic feeders consuming cod, likely representing a consumption of cod eggs and/or juveniles. This greatly exemplifies the point we made in the previous section with regards to misclassified interactions being real rather than false positives. The resulting TSS score is therefore greatly diminished by classifying additional interactions as false positives. We therefore believe that the TSS score for the St. Lawrence analysis represents an underestimation of the efficiency of our methodology to predict interactions.
+On the other hand, the algorithm also predicts substantially more interactions than those presented in \citet{savenkoff2004} (Figure \ref{fig:SGSL}; Table \ref{ch2-tbl3}).  For instance, an important number of additional interactions were predicted for small piscivorous pelagic feeders as consumers (Figure \ref{fig:SGSL}). When considering that these species are typically considered as resources, it should be unsurprising that the broad range of interactions composing the catalogue and from which predictions are made results in new consumer interactions being predicted for those species. An ecological interpretation can therefore be easily provided to explain these additional interactions, such as small piscivorous pelagic feeders consuming cod, likely representing a consumption of cod eggs and/or juveniles. This greatly exemplifies the point we made in the previous section with regards to misclassified interactions being real rather than false positives. The resulting TSS score is therefore greatly diminished by classifying additional interactions as false positives. We therefore believe that the TSS score for the St. Lawrence analysis represents an underestimation of the efficiency of our methodology to predict interactions.
 
 \subsection{Perspectives}
 
@@ -317,16 +317,21 @@ The logical steps allow us to predict a set of resources for $T_1$ = \{$T_9$, $T
 % ---------------------------------
 % ---------------------------------
 \begin{singlespace}
-\begin{table}[h!]
-    \caption{List of functional groups included in the dataset presented in \citet{savenkoff2004} with their taxa composition. Only taxa that were at least at the scale of the family were used to predict interactions. List adapted from \citet{savenkoff2004}.}
-    \centering
-    \small
-    \newcolumntype{b}{>{\hsize=.8\hsize}X}
-    \newcolumntype{s}{>{\hsize=.2\hsize}X}
-    \begin{tabularx}{1\textwidth}{|s|b|}
-        \hline
+
+  \begin{longtable}{ p{0.2\textwidth} p{0.7\textwidth} }
+  \caption{List of functional groups included in the dataset presented in \citet{savenkoff2004} with their taxa composition. Only taxa that were at least at the scale of the family were used to predict interactions. List adapted from \citet{savenkoff2004}.}
+  \label{ch2-tbl1}
+  \tabularnewline
+        \toprule
         Functional group name   & Functional group main taxa composition    \\
         \hline \hline
+        \endfirsthead
+
+        \toprule
+        Functional group name   & Functional group main taxa composition    \\
+        \hline \hline
+        \endhead
+
         Cetaceans                          & $Balaenoptera$ $physalus$, $B.$ $acutorostrata$, $Megaptera$ $novaeangliae$, $Phocoena$ $phocoena$, $Lagenorhynchus$ $acutus$, $L.$ $albirostris$  \\
         \hline
         Harp seals                         & $Pagophilus$ $groenlandicus$   \\
@@ -369,167 +374,30 @@ The logical steps allow us to predict a set of resources for $T_1$ = \{$T_9$, $T
         \hline
         Echinoderms                        & $Echinarachnius$ $parma$, $Stronglyocentrotus$ $pallidus$, $Ophiura$ $robusta$ \\
         \hline
-  \end{tabularx}
-
-\end{table}
-
-\newpage
-\begin{table}[h!]
-    \centering
-    \small
-    \newcolumntype{b}{>{\hsize=.8\hsize}X}
-    \newcolumntype{s}{>{\hsize=.2\hsize}X}
-    \begin{tabularx}{1\textwidth}{|s|b|}
-        \hline
-        Functional group name   & Functional group main taxa composition    \\
-        \hline \hline
         Molluscs                           & $Mesodesma$ $deauratum$, $Cyrtodaria$ $siliqua$    \\
         \hline
-        Polychates                         & $Parexogone$ $hebes$   \\
+        Polychaetes                         & $Parexogone$ $hebes$   \\
         \hline
         Small zooplankton                  & $Oithona$ $similis$, $Temora$ $longicornis$, $Pseudocalanus sp.$, $Calanus$ $finmarchicus$, tunicates, meroplankton, heterotrophic protozoa    \\
         \hline
         Phytoplankton                      & $Chaetoceros$ $affinis$, $Chaetoceros sp.$, $Leptocylindrus$ $minimus$, $Thalassiiosira$ $nordenskioldii$, $Thalassiiosira sp.$, $Fragilariopsis sp.$, other diatoms, mixture of autotrophic and mixotrophic organisms including Cryptophytes, dinoflagellates, Prasinophytes and Prymnesiophytes  \\
-        \hline
-  \end{tabularx}
-\end{table}
+    \bottomrule
+  \end{longtable}
 
-\newpage
-\begin{table}[h!]
-  \caption{List of functional groups for which interactions were predicted by the algorithm, but not observed in \citet{savenkoff2004} ($b$).}
-    \centering
-    \begin{tabular}{|l|l|}
-      \hline
-        Consumer               & Resource \\
-      \hline    \hline
-      Skates                              & Skates    \\
-      Atlantic cod                        & Skates    \\
-      Hooded seals                        & Shrimp    \\
-      Piscivorous small pelagic feeders   & Shrimp    \\
-      Planktivorous small pelagic feeders & Phytoplankton \\
-      Planktivorous small pelagic feeders & Large crustaceans \\
-      Hooded seals                        & Large crustaceans \\
-      Echinoderms                         & Large crustaceans \\
-      Flounders                           & Large crustaceans \\
-      Seabirds                            & Large crustaceans \\
-      Greenland halibut                   & Large crustaceans \\
-      Piscivorous small pelagic feeders   & Large crustaceans \\
-      Redfish                             & Large crustaceans \\
-      Planktivorous small pelagic feeders & Planktivorous small pelagic feeders   \\
-      American plaice                     & Planktivorous small pelagic feeders   \\
-      Echinoderms                         & Echinoderms   \\
-      Large demersal feeders              & Echinoderms   \\
-      Planktivorous small pelagic feeders & Atlantic cod  \\
-      American plaice                     & Atlantic cod  \\
-      Flounders                           & Atlantic cod  \\
-      Greenland halibut                   & Atlantic cod  \\
-      Piscivorous small pelagic feeders   & Atlantic cod  \\
-      Cetaceans                           & American plaice   \\
-      Planktivorous small pelagic feeders & American plaice   \\
-      Hooded seals                        & American plaice   \\
-      American plaice                     & American plaice   \\
-      Flounders                           & American plaice   \\
-      Harbour seals                       & American plaice   \\
-      Piscivorous small pelagic feeders   & American plaice   \\
-      Redfish                             & American plaice   \\
-      Large pelagic feeders               & American plaice   \\
-      Cetaceans                           & Flounders \\
-      Planktivorous small pelagic feeders & Flounders \\
-      American plaice                     & Flounders \\
-      Flounders                           & Flounders \\
-      Piscivorous small pelagic feeders   & Flounders \\
-      Redfish                             & Flounders \\
-      Large crustaceans                   & Capelin   \\
-      Planktivorous small pelagic feeders & Capelin   \\
-      Piscivorous small pelagic feeders   & Small demersal feeders    \\
-      \hline
-  \end{tabular}
-\end{table}
-\newpage
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|l|l|}
-      \hline
-      Consumer               & Resource \\
-      \hline    \hline
-      Cetaceans                           & Small zooplankton \\
-      Large crustaceans                   & Small zooplankton \\
-      Large pelagic feeders               & Small zooplankton \\
-      Large demersal feeders              & Small zooplankton \\
-      Atlantic cod                        & Seabirds  \\
-      Seabirds                            & Seabirds  \\
-      Large demersal feeders              & Seabirds  \\
-      Harbour seals                       & Harbour seals \\
-      Skates                              & Greenland halibut \\
-      Cetaceans                           & Greenland halibut \\
-      Planktivorous small pelagic feeders & Greenland halibut \\
-      Atlantic cod                        & Greenland halibut \\
-      American plaice                     & Greenland halibut \\
-      Flounders                           & Greenland halibut \\
-      Small demersal feeders              & Greenland halibut \\
-      Harbour seals                       & Greenland halibut \\
-      Piscivorous small pelagic feeders   & Greenland halibut \\
-      Redfish                             & Greenland halibut \\
-      Large pelagic feeders               & Greenland halibut \\
-      Planktivorous small pelagic feeders & Piscivorous small pelagic feeders \\
-      American plaice                     & Piscivorous small pelagic feeders \\
-      Flounders                           & Piscivorous small pelagic feeders \\
-      Small demersal feeders              & Piscivorous small pelagic feeders \\
-      Piscivorous small pelagic feeders   & Piscivorous small pelagic feeders \\
-      Atlantic cod                        & Redfish   \\
-      Harp seals                          & Redfish   \\
-      Seabirds                            & Redfish   \\
-      Redfish                             & Redfish   \\
-      Large pelagic feeders               & Redfish   \\
-      Skates                              & Large pelagic feeders \\
-      Planktivorous small pelagic feeders & Large pelagic feeders \\
-      Hooded seals                        & Large pelagic feeders \\
-      Atlantic cod                        & Large pelagic feeders \\
-      American plaice                     & Large pelagic feeders \\
-      Flounders                           & Large pelagic feeders \\
-      Small demersal feeders              & Large pelagic feeders \\
-      Harp seals                          & Large pelagic feeders \\
-      Seabirds                            & Large pelagic feeders \\
-      Greenland halibut                   & Large pelagic feeders \\
-      Piscivorous small pelagic feeders   & Large pelagic feeders \\
-      \hline
-    \end{tabular}
-\end{table}
-\newpage
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|l|}
-    \hline
-    Consumer               & Resource \\
-    \hline    \hline
-    Redfish                             & Large pelagic feeders \\
-    Large pelagic feeders               & Large pelagic feeders \\
-    Large demersal feeders              & Large pelagic feeders \\
-    Skates                              & Large demersal feeders    \\
-    Cetaceans                           & Large demersal feeders    \\
-    Planktivorous small pelagic feeders & Large demersal feeders    \\
-    Atlantic cod                        & Large demersal feeders    \\
-    American plaice                     & Large demersal feeders    \\
-    Flounders                           & Large demersal feeders    \\
-    Small demersal feeders              & Large demersal feeders    \\
-    Seabirds                            & Large demersal feeders    \\
-    Greenland halibut                   & Large demersal feeders    \\
-    Piscivorous small pelagic feeders   & Large demersal feeders    \\
-    Redfish                             & Large demersal feeders    \\
-    Large pelagic feeders               & Large demersal feeders    \\
-    Large demersal feeders              & Large demersal feeders    \\
-    \hline
-\end{tabular}
-\end{table}
-
-\newpage
-\begin{table}[h!]
+  \begin{longtable}{ p{0.4\textwidth} p{0.4\textwidth} }
   \caption{List of functional groups for which observed interactions in \citet{savenkoff2004} were not predicted by the algorithm ($c$).}
-  \centering
-  \begin{tabular}{|l|l|}
-    \hline
+  \label{ch2-tbl2}
+  \tabularnewline
+    \toprule
       Consumer               & Resource \\
     \hline  \hline
+    \endfirsthead
+
+    \toprule
+      Consumer               & Resource \\
+    \hline  \hline
+    \endhead
+
     Grey seals             & Skates \\
     Seabirds               & Skates \\
     Harbour seals          & Skates \\
@@ -565,7 +433,120 @@ The logical steps allow us to predict a set of resources for $T_1$ = \{$T_9$, $T
     Grey seals             & Piscivorous small pelagic feeders  \\
     Greenland halibut      & Piscivorous small pelagic feeders  \\
     Redfish                & Piscivorous small pelagic feeders  \\
-    \hline
-  \end{tabular}
-\end{table}
+    \bottomrule
+  \end{longtable}
+
+  \begin{longtable}{ p{0.4\textwidth} p{0.4\textwidth} }
+  \caption{List of functional groups for which interactions were predicted by the algorithm, but not observed in \citet{savenkoff2004} ($b$).}
+  \label{ch2-tbl3}
+  \tabularnewline
+    \toprule
+      Consumer               & Resource \\
+    \hline    \hline
+    \endfirsthead
+
+    \toprule
+      Consumer               & Resource \\
+    \hline    \hline
+    \endhead
+
+    Skates                              & Skates    \\
+    Atlantic cod                        & Skates    \\
+    Hooded seals                        & Shrimp    \\
+    Piscivorous small pelagic feeders   & Shrimp    \\
+    Planktivorous small pelagic feeders & Phytoplankton \\
+    Planktivorous small pelagic feeders & Large crustaceans \\
+    Hooded seals                        & Large crustaceans \\
+    Echinoderms                         & Large crustaceans \\
+    Flounders                           & Large crustaceans \\
+    Seabirds                            & Large crustaceans \\
+    Greenland halibut                   & Large crustaceans \\
+    Piscivorous small pelagic feeders   & Large crustaceans \\
+    Redfish                             & Large crustaceans \\
+    Planktivorous small pelagic feeders & Planktivorous small pelagic feeders   \\
+    American plaice                     & Planktivorous small pelagic feeders   \\
+    Echinoderms                         & Echinoderms   \\
+    Large demersal feeders              & Echinoderms   \\
+    Planktivorous small pelagic feeders & Atlantic cod  \\
+    American plaice                     & Atlantic cod  \\
+    Flounders                           & Atlantic cod  \\
+    Greenland halibut                   & Atlantic cod  \\
+    Piscivorous small pelagic feeders   & Atlantic cod  \\
+    Cetaceans                           & American plaice   \\
+    Planktivorous small pelagic feeders & American plaice   \\
+    Hooded seals                        & American plaice   \\
+    American plaice                     & American plaice   \\
+    Flounders                           & American plaice   \\
+    Harbour seals                       & American plaice   \\
+    Piscivorous small pelagic feeders   & American plaice   \\
+    Redfish                             & American plaice   \\
+    Large pelagic feeders               & American plaice   \\
+    Cetaceans                           & Flounders \\
+    Planktivorous small pelagic feeders & Flounders \\
+    American plaice                     & Flounders \\
+    Flounders                           & Flounders \\
+    Piscivorous small pelagic feeders   & Flounders \\
+    Redfish                             & Flounders \\
+    Large crustaceans                   & Capelin   \\
+    Planktivorous small pelagic feeders & Capelin   \\
+    Piscivorous small pelagic feeders   & Small demersal feeders    \\
+    Cetaceans                           & Small zooplankton \\
+    Large crustaceans                   & Small zooplankton \\
+    Large pelagic feeders               & Small zooplankton \\
+    Large demersal feeders              & Small zooplankton \\
+    Atlantic cod                        & Seabirds  \\
+    Seabirds                            & Seabirds  \\
+    Large demersal feeders              & Seabirds  \\
+    Harbour seals                       & Harbour seals \\
+    Skates                              & Greenland halibut \\
+    Cetaceans                           & Greenland halibut \\
+    Planktivorous small pelagic feeders & Greenland halibut \\
+    Atlantic cod                        & Greenland halibut \\
+    American plaice                     & Greenland halibut \\
+    Flounders                           & Greenland halibut \\
+    Small demersal feeders              & Greenland halibut \\
+    Harbour seals                       & Greenland halibut \\
+    Piscivorous small pelagic feeders   & Greenland halibut \\
+    Redfish                             & Greenland halibut \\
+    Large pelagic feeders               & Greenland halibut \\
+    Planktivorous small pelagic feeders & Piscivorous small pelagic feeders \\
+    American plaice                     & Piscivorous small pelagic feeders \\
+    Flounders                           & Piscivorous small pelagic feeders \\
+    Small demersal feeders              & Piscivorous small pelagic feeders \\
+    Piscivorous small pelagic feeders   & Piscivorous small pelagic feeders \\
+    Atlantic cod                        & Redfish   \\
+    Harp seals                          & Redfish   \\
+    Seabirds                            & Redfish   \\
+    Redfish                             & Redfish   \\
+    Large pelagic feeders               & Redfish   \\
+    Skates                              & Large pelagic feeders \\
+    Planktivorous small pelagic feeders & Large pelagic feeders \\
+    Hooded seals                        & Large pelagic feeders \\
+    Atlantic cod                        & Large pelagic feeders \\
+    American plaice                     & Large pelagic feeders \\
+    Flounders                           & Large pelagic feeders \\
+    Small demersal feeders              & Large pelagic feeders \\
+    Harp seals                          & Large pelagic feeders \\
+    Seabirds                            & Large pelagic feeders \\
+    Greenland halibut                   & Large pelagic feeders \\
+    Piscivorous small pelagic feeders   & Large pelagic feeders \\
+    Redfish                             & Large pelagic feeders \\
+    Large pelagic feeders               & Large pelagic feeders \\
+    Large demersal feeders              & Large pelagic feeders \\
+    Skates                              & Large demersal feeders    \\
+    Cetaceans                           & Large demersal feeders    \\
+    Planktivorous small pelagic feeders & Large demersal feeders    \\
+    Atlantic cod                        & Large demersal feeders    \\
+    American plaice                     & Large demersal feeders    \\
+    Flounders                           & Large demersal feeders    \\
+    Small demersal feeders              & Large demersal feeders    \\
+    Seabirds                            & Large demersal feeders    \\
+    Greenland halibut                   & Large demersal feeders    \\
+    Piscivorous small pelagic feeders   & Large demersal feeders    \\
+    Redfish                             & Large demersal feeders    \\
+    Large pelagic feeders               & Large demersal feeders    \\
+    Large demersal feeders              & Large demersal feeders    \\
+    \bottomrule
+  \end{longtable}
+
 \end{singlespace}
