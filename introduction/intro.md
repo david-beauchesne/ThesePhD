@@ -117,7 +117,7 @@ La disponibilité et l’accessibilité des ressources, combiné à un positionn
 
 ### Partie 1 : cadre théorique {-}
 
-\noindent \textit{Chapitre 1 : À propos de la sensibilité des réseaux trophiques aux effets de multiples stresseurs} \linebreak[4]
+\noindent \textit{Chapitre 1 : À propos de la sensibilité des réseaux trophiques aux effets de multiples stresseurs} \linebreak[2]
 
 Les fondements pratiques et théoriques sur les effets de multiples stresseurs demeurent imparfaits [@cote2016; @delaender2018] et l’incapacité de l’approche de @halpern2008a à considérer les interactions écologiques n’est pas unique à leur méthode. D’un point de vue empirique, les contraintes pratiques et méthodologiques à l’évaluation des effets de multiples stresseurs et de leurs interactions sur les communautés écologiques sont apparentes. Les designs expérimentaux factoriels et répliqués et les méthodes statistiques requises imposent des défis logistiques et méthodologiques importants [@jones2016]. Les approches expérimentales et *in situ* sont ainsi limitées à un faible nombre de stresseurs et d’espèces. De plus, les études qui s’intéressent aux effets de multiple stresseurs utilisent typiquement des modèles nuls permettant d’identifier des effets non-additifs, sans toutefois décrire les mécanismes écologiques qui régissent les effets de multiples stresseurs [@griffen2016; @jackson2016; @delaender2018; @schafer2018].
 
@@ -125,18 +125,18 @@ D’un point de vue théorique, l’importance des interactions écologiques pou
 
 ### Partie 2 : considérations méthodologiques et logistiques {-}
 
-\noindent \textit{Chapitre 2 : Prédire les interactions biotiques au sein de milieux pauvres en données} \linebreak[4]
+\noindent \textit{Chapitre 2 : Prédire les interactions biotiques au sein de milieux pauvres en données} \linebreak[2]
 
 Un défi à l’inclusion des interactions aux évaluations d’effets cumulatifs est la caractérisation de la structure des réseaux trophiques [@polis1991; @martinez1992; @pascual2006]. La quantité d’interactions potentielles entres les espèces d’un réseau est imposante. À titre d’exemple, un réseau trophique simple composé de sept espèces compte potentiellement 42 interactions directes et jusqu’à 13 650 interactions indirectes [@dodds2006]. Observer l’ensemble des interactions, et surtout l’absence d’interaction, devient un défi logistique majeur qui rend la description empirique de la structure des communautés particulièrement complexe [@dunne2006; @morales-castilla2015]. Des méthodes permettent de prédire les interactions en utilisant des proxy comme des traits fonctionnels, la phylogénie et la distribution des espèces [*e.g.* @gravel2013; @morales-castilla2015; @bartomeus2016; @albouy2019]. Les données requises pour l’application de ces méthodes demeurent toutefois importantes. L’objectif du chapitre 2 est de développer une méthode permettant de prédire les interactions trophiques dans un contexte où peu de données sont disponibles afin d’accroître leur disponibilité pour les évaluations d’effets cumulatifs et la gestion environnementale. \linebreak[4]
 
-\noindent \textit{Chapitre 3 : L’évaluation des impacts cumulés dans l’estuaire et le golfe du Saint-Laurent : vers une planification systémique de l’exploitation des ressources} \linebreak[3]
+\noindent \textit{Chapitre 3 : L’évaluation des impacts cumulés dans l’estuaire et le golfe du Saint-Laurent : vers une planification systémique de l’exploitation des ressources} \linebreak[2]
 
-\noindent \textit{Chapitre 4 : Caractériser et partager les connaissances sur l’exposition aux stresseurs environnementaux dans le Système du Saint-Laurent au Canada} \linebreak[4]
+\noindent \textit{Chapitre 4 : Caractériser et partager les connaissances sur l’exposition aux stresseurs environnementaux dans le Système du Saint-Laurent au Canada} \linebreak[2]
 
 Tel que décrit précédemment, le Système du Saint-Laurent occupe une place primordiale pour l’économie du Canada. Il est également caractérisé par un mode de gestion complexe qui implique cinq juridictions provinciales -- *i.e.* Terre-Neuve, la Nouvelle-Écosse, le Nouveau-Brunswick, l’Île-du-Prince-Édouard et le Québec -- et une juridiction fédérale. Les données, les expertises et les pouvoirs décisionnels sont donc partagés entre plusieurs acteurs. Un diversité d’enjeux caractérisent ainsi le Système du Saint-Laurent, qui bénéficierait d’un approche de gestion écosystémique. Au moment de débuter ma thèse, les rapports de @dufour2007 et de @benoit2012 étaient les seuls ouvrages récents offrant une vue d’ensemble des enjeux environnementaux au sein du Système du Saint-Laurent. L’objectif du chapitre 3 est de contextualiser ces enjeux environnementaux et d’identifier les défis associés à l’évaluation des effets cumulatifs dans un contexte de gestion écosystémique au sein du Système du Saint-Laurent. L’objectif du chapitre 4, quant à lui, est de caractériser la distribution et l’intensité des stresseurs environnementaux d’importances, qui constitue un élément essentiel à une évaluation des effets cumulatifs au sein du Système du Saint-Laurent.
 
 ### Partie 3 : évaluation des effets cumulatifs {-}
 
-\noindent \textit{Chapitre 5 :  Les interactions amplifient les effets cumulatifs dans les écosystèmes marins} \linebreak[4]
+\noindent \textit{Chapitre 5 :  Les interactions amplifient les effets cumulatifs dans les écosystèmes marins} \linebreak[2]
 
 Le chapitre 5 rassemble l’ensemble des chapitres précédents afin d’atteindre l’objectif général de la thèse, soit d’évaluer les effets cumulatifs des changements climatiques et des activités humaines sur les communautés écologiques du Système du Saint-Laurent. En s’appuyant sur les quatre chapitres précédents, ce chapitre démontre comment assouplir le postulat d’indépendance entre les espèces imposé par l’approche originale de @halpern2008 afin de considérer la structure des communautés écologiques pour l’évaluation des effets cumulatifs.
