@@ -49,6 +49,7 @@
 
 % Ajout Cyril :
 \usepackage[linktocpage=true,linkcolor=black,citecolor=black,colorlinks=true,urlcolor=blue,pagebackref]{hyperref}
+% \usepackage[english,french]{babel}
 \usepackage[english,french]{cleveref}
 \usepackage{upgreek}
 \usepackage{textcomp}
@@ -157,8 +158,8 @@
 
 % ----------------------------------------------------
 %% Ajouts D. Beauchesne
-\counterwithin{figure}{chapter}
-\counterwithin{table}{chapter}
+% \counterwithin{figure}{chapter}
+% \counterwithin{table}{chapter}
 % Landscape page
 \usepackage{lscape}
 \newcommand{\blandscape}{\begin{landscape}}
@@ -226,7 +227,7 @@
 \Auteur{David Beauchesne}
 \Faculte{Programme de doctorat en océanographie}
 \Diplome{Philosophiae Doctor}
-\Date{Septembre}{2020}
+\Date{Décembre}{2020}
 
 
 
@@ -241,10 +242,6 @@
 \pdfstringdefDisableCommands{%
 \let\MakeUppercase\relax}
 
-% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%
-% -- To delete - CHECKLIST
-%\input{checklist.tex}
-% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%
 
 % ----------------------------------------------------------------------%
 % 2- Liminaires de la thèse.                                            %
@@ -263,10 +260,8 @@
 % Utiliser      chapitres.tex pour une thèse (ou mémoire) traditionnelle.
 % Remplacer par articles.tex  pour une thèse (ou mémoire) par articles.
 
-
-\introduction
 \selectlanguage{french}
-
+\introduction
 % \chapter{INTRODUCTION GÉNÉRALE}
 \input{./introduction/intro.tex}
 \cleardoublepage
@@ -276,7 +271,11 @@
 
 \input{./chapitre1/chap1.tex}
 \input{./chapitre2/chap2.tex}
+
+\selectlanguage{french}
 \input{./chapitre3/chap3.tex}
+
+\selectlanguage{english}
 \input{./chapitre4/chap4.tex}
 \input{./chapitre5/chap5.tex}
 
@@ -308,7 +307,7 @@
 % 5 - Bibliographie.                                                    %
 % ----------------------------------------------------------------------%
 
-\selectlanguage{english}
+\selectlanguage{french}
 
 \begin{singlespace}
   \makeatletter

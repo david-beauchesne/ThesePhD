@@ -102,7 +102,7 @@ référence [@dube2006].
 Les impacts cumulés correspondent à l'accumulation
 ou à l'accroissement progressif d'un ou de plusieurs impacts
 sur le milieu naturel [@peterson1987]. La législation
-canadienne définit les impacts cumulés comme : L'impact sur
+canadienne définit les impacts cumulés comme : l'impact sur
 l'environnement résultant des effets d'un projet combinés à ceux
 d'autres projets et activités antérieurs, actuels et imminents
 [@governmentofcanada1992]. Cette
@@ -263,7 +263,7 @@ un lieu d'intérêt pour l'industrie touristique.
 
 Le Saint-Laurent accueillera également diverses activités
 émergentes, tandis que d'autres actuellement pratiquées
-s'intensifieront dans un futur rapproché. La stratégie maritime
+s'intensifieront dans un futur proche. La stratégie maritime
 québécoise prévoit, entre autres, une amélioration et une
 augmentation des capacités des infrastructures portuaires,
 une augmentation du trafic maritime à caractère industriel et
@@ -278,7 +278,7 @@ golfe, un intérêt clair est attribué à l'exploration des hydrocarbures
 dans le Saint-Laurent [p. ex. @pechesetoceanscanada2013a], suggérant qu'une
 exploitation des hydrocarbures peut être pressentie dans le Saint-
 Laurent. Des activités de pêche émergente, comme l'exploitation
-du concombre de mer (Cucumaria frondosa), sont également en
+du concombre de mer (*Cucumaria frondosa*), sont également en
 essor dans le Saint-Laurent [p. ex. @campagna2005].
 
 Finalement, les changements climatiques vont vraisemblablement
@@ -339,7 +339,7 @@ Laurent comme les anomalies de températures de surface [@dufour2007].
  \multirow[t]{2}{0.14\textwidth}{Tourisme} & Aménagement côtier &&&&X&&X&X&X&&&&&&&X& \\
  & Navigation de plaisance$^*$ &&&X&X&&X&&X&&&X&&&&X& \\
  \bottomrule
- \multicolumn{18}{l}{$^*$Activités ou sous-activités pour lesquelles une intensification est prévisible dans un futur rapproché} \\
+ \multicolumn{18}{l}{$^*$Activités ou sous-activités pour lesquelles une intensification est prévisible dans un futur proche} \\
  \multicolumn{18}{l}{$^**$Activités ou sous-activités émergentes}
  \label{ch3-stressors}
 
@@ -443,7 +443,7 @@ et les impacts totaux observés [@halpern2008a].
 
 # Le cas de la morue du golfe du Saint-Laurent
 
-La morue (Gadus morhua)
+La morue (*Gadus morhua*)
 fournit un exemple intéressant des
 impacts de multiples stresseurs
 environnementaux et de la nécessité

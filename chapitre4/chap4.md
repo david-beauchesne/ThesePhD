@@ -53,7 +53,7 @@ The St. Lawrence System, formed by one of the largest estuaries in the world and
 
 Increasing exposure and the experiences of past ecological tragedies in the St. Lawrence System such as the collapse of cod fisheries [@frank2005; @dempsey2018] and the decline of the beluga and right whale populations [@plourde2014] together urge the need to characterize the distribution, intensity and co-occurrence of drivers in the system. Research on the effects of drivers in marine environments, nonetheless, remains overwhelmingly focused on single driver assessments [@obrien2019]. Whereas, co-occurring drivers may not interact, driver co-occurrence is a requirement for interactions to exist. Knowledge of their co-distribution can therefore identify areas where driver interactions are most likely observed.
 
-Characterizing drivers is also a necessary step for the application of holistic management approaches. Holistic approaches typically involve, but are not limited to, selecting and describing valued ecosystem components (*e.g.* habitats and species) and drivers (*e.g.*, marine traffic and ocean acidification), assessing the exposure and vulnerability of valued components to drivers, selecting a proper spatio-temporal scale, monitoring, and public and stakeholder participation [@dube2001] .Gathering environmental knowledge for holistic initiatives can, however, be a very challenging and time consuming—not to say painful—process. On one hand, there is an overwhelming and expanding wealth of data available. Such information overload may inhibit our ability to make decisions based on scientific information, promote massive duplication of effort, disproportionately appropriate research funds to certain sectors, and obscure knowledge gaps amid a sea of information [@eppler2004]. On the other hand, crucial data are lacking and remain largely unavailable or inaccessible for a variety of reasons, including proprietary rights, lack of organizational time, capacity and training, and, in some cases, an unwillingness to share; this curtails our ability for appropriate decision-making.
+Characterizing drivers is also a necessary step for the application of holistic management approaches. Holistic approaches typically involve, but are not limited to, selecting and describing valued ecosystem components (*e.g.* habitats and species) and drivers (*e.g.*, marine traffic and ocean acidification), assessing the exposure and vulnerability of valued components to drivers, selecting a proper spatio-temporal scale, monitoring, and public and stakeholder participation [@dube2001]. Gathering environmental knowledge for holistic initiatives can, however, be a very challenging and time consuming—not to say painful—process. On one hand, there is an overwhelming and expanding wealth of data available. Such information overload may inhibit our ability to make decisions based on scientific information, promote massive duplication of effort, disproportionately appropriate research funds to certain sectors, and obscure knowledge gaps amid a sea of information [@eppler2004]. On the other hand, crucial data are lacking and remain largely unavailable or inaccessible for a variety of reasons, including proprietary rights, lack of organizational time, capacity and training, and, in some cases, an unwillingness to share; this curtails our ability for appropriate decision-making.
 
 Current initiatives facilitate the data gathering process by assembling, organizing and sharing environmental knowledge, such as the Ocean Biogeographic Information System [OBIS; @obis2020] for biotic data and Bio-ORACLE [@assis2018] for abiotic data. However, equivalent platforms for drivers have largely focused on single drivers (*e.g.*, Global Fishing Watch) and platforms collating data-based indicators and knowledge on multiple drivers in a comparable and interoperable way remain conspicuously missing [but see @halpern2015]. This is in spite of integrated management and assessment approaches requiring efficient data reporting, standardized data management practices, and tools tailored to the study of the effects of multiple drivers [@dafforn2016; @stock2018].
 
@@ -511,7 +511,7 @@ increasing $O_2$ in the deep Channels. This stronger correlation is likely cause
 
 There are likely different dynamics at play in the Southern Gulf, such as waters with lowered alkalinity and salinity caused by the surface, seaward-flowing Gaspé Current. These waters have lower buffering capacities to decreasing pH and $\Omega_{A}$. Furthermore, the accumulation of metabolic carbon dioxide produced by rapid oxic degradation of organic matter in the sandy and permeable sediments of the Magdalen Shelf or in the Gaspé current could decrease $\Omega_{A}$ in the Southern Gulf (Starr and Chassé, *personal communication*).
 
-We thus divided the and their analysis between the Southern and Northern St. Lawrence. The St. Lawrence was divided along the 350m isobath on the southern slope of the Laurentian Channel, from the Cabot Strait to the tip of the Gaspé Peninsula. The $\Omega_A$ distribution in the Southern St. Lawrence was modeled
+We thus divided their analysis between the Southern and Northern St. Lawrence. The St. Lawrence was divided along the 350m isobath on the southern slope of the Laurentian Channel, from the Cabot Strait to the tip of the Gaspé Peninsula. The $\Omega_A$ distribution in the Southern St. Lawrence was modeled
 using the exponential kriging model.
 
 We predicted $\Omega_A$ using $O_2$ for the Northern St. Lawrence. Whereas
@@ -958,7 +958,7 @@ For the St. Lawrence, we overlaid the raw data layers [@halpern2015] with our
 ## Driver intensity and distribution
 
 We evaluated the frequency distribution of each drivers to verify whether data
-should be transformed (Figure S\ref{ch4-hist}). In light of this, we log-transformed
+should be transformed (Figure \ref{ch4-hist}). In light of this, we log-transformed
 the following driver layers
 
 - Coastal development
@@ -974,7 +974,7 @@ the following driver layers
 
 To allow for relative intensity comparison, all driver layers were subsequently
 normalized between 0 and 1 using the 99th quantile to further control for
-extreme values (Figure S\ref{ch4-drivers}).
+extreme values (Figure \ref{ch4-drivers}).
 
 
 \begin{figure}[H]
