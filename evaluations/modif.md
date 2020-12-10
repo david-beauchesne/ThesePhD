@@ -16,6 +16,7 @@ header-includes:
    - \usepackage{setspace}
 ---
 
+<!-- rmarkdown::render('./evaluations/modif.md', output_format = 'pdf_document') -->
 
 # Modifications faites à la thèse
 
@@ -26,6 +27,21 @@ header-includes:
 - Après discussion avec Isabelle à la période de question à la soutenance, modification de "functional traits" pour "traits" uniquement
 - Ajuster citations en français (*and* vs *et*, *table* vs *tableau*)
 - Numéros de figures et tableaux de 1 à n
+
+
+# Avant-propos
+
+Mon projet de doctorat s'insère dans le Canadian Healthy Oceans Network (CHONe) du CRSNG. CHONe avait deux thèmes principaux de recherche, soit les stratégies de conservation des écosystèmes marins ainsi que l'identification des principaux stresseurs, incluant les effets cumulatifs, qui altèrent la biodiversité marine et les fonctions et services écosystémiques. Mon projet était à l'origine un projet de maîtrise sur l'identification d'indicateurs de conditions benthiques à l'échelle du Golfe du Saint-Laurent et devait mener à la caractérisation des principales sources de stress au sein du Saint-Laurent. En fonction de mes intérêts de recherche, nous avons développé ce projet de maîtrise en un projet de doctorat qui vise également l'intégration des interactions écologiques pour l'évaluation des effets cumulatifs directs et indirects des stresseurs environnementaux sur les communautés écologiques.
+
+Mes travaux de thèse ont mené à la préparation de 5 articles scientifiques, dont 3 sont publiés, 1 est en révision et le dernier est en préparation. J'ai également contribué à la rédaction d'un chapitre de livre sur l'évaluation des effets cumulatifs au sein du Système du Saint-Laurent. J'ai également présenté mes travaux de recherche à de multiples conférences à travers 11 présentations orales et 10 affiches scientifiques.
+
+Je veux reconnaître les nombreuses sources de support financier et scientifique dont j'ai bénéficié tout au long de ma thèse. Je débute en remerciant les organismes subventionnaires qui ont rendu mon projet possible. Je remercie le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), qui m'a octroyé une bourse d'études supérieures de doctorat (ES D), et le Fonds de recherche du Québec -- Nature et Technologies (FRQNT), qui m'a octroyé une bourse de doctorat en recherche.
+
+Je tiens également à remercier les multiples regroupements de recherche dont j'ai été membre pendant ma thèse et qui m'ont fourni du support scientifique et financier, ainsi que des expériences inoubliables et enrichissantes autant d'un point de vue personnel que professionnel. Merci à Québec Océan, le Centre de la science de la biodiversité (CSBQ), le programme Computational Biodiversity Science and Services (BIOS$^2$), Notre Golfe et Takuvik. Je remercie également le regroupement CHONe et ses partenaires, soit le Département Pêches et Océans Canada et l'INREST en tant que représentant du Port de Sept-Îles et de la Ville de Sept-Îles. Je remercie également l'Observatoire Global du Saint-Laurent (OGSL) pour son support technique dans l'établissement de la plateforme *eDrivers* et pour la collaboration prévue qui ira au-delà de ma thèse.
+
+Je remercie également divers ministères provinciaux et fédéraux qui ont contribué au projet, que ce soit par du support financier, du temps d'experts ou des données. Un merci particulier à Pêches et Océans Canada, sans qui ce projet n'aurait été possible. Merci également au Ministère de l'Environnement et de la Lutte contre les changements climatiques (MELCC) et au Ministère de l’Agriculture, des Pêcheries et de l’Alimentation du Québec (MAPAQ) du Gouvernement du Québec, au Département Agriculture, Aquaculture et Pêches du Gouvernement du Nouveau-Brunswick, au Département de Pêcheries et de l'Aquaculture du Gouvernement de la Nouvelle-Écosse, et au Département de Pêcheries, de Foresterie et d'Agriculture du Gouvernement de Terre-Neuve-et-Labrador.
+
+Finalement, je tiens à remercier l'Université du Québec à Rimouski, l'Université Laval et l'Université de Sherbrooke pour m'avoir accueilli, fournit des locaux de travail et du support administratif.
 
 
 ## Introduction shéma concept
