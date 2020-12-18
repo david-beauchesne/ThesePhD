@@ -1,6 +1,6 @@
 Mon projet de doctorat s'insère dans le Canadian Healthy Oceans Network (CHONe) du CRSNG. CHONe avait deux thèmes principaux de recherche, soit les stratégies de conservation des écosystèmes marins ainsi que l'identification des principaux stresseurs, incluant les effets cumulatifs, qui altèrent la biodiversité marine et les fonctions et services écosystémiques. Mon projet était à l'origine un projet de maîtrise sur l'identification d'indicateurs de conditions benthiques à l'échelle du Golfe du Saint-Laurent et devait mener à la caractérisation des principales sources de stress au sein du Saint-Laurent. En fonction de mes intérêts de recherche, nous avons développé ce projet de maîtrise en un projet de doctorat qui vise également l'intégration des interactions écologiques pour l'évaluation des effets cumulatifs directs et indirects des stresseurs environnementaux sur les communautés écologiques.
 
-Mes travaux de thèse ont mené à la préparation de 5 articles scientifiques, dont 3 sont publiés, 1 est en révision et le dernier est en préparation. J'ai également contribué à la rédaction d'un chapitre de livre sur l'évaluation des effets cumulatifs au sein du Système du Saint-Laurent. J'ai également présenté mes travaux de recherche à de multiples conférences à travers 11 présentations orales et 10 affiches scientifiques.
+Mes travaux de thèse ont mené à la préparation de 5 articles scientifiques, dont 3 sont publiés, 1 est en révision et le dernier est en préparation. J'ai également contribué à la rédaction d'un chapitre de livre sur l'évaluation des effets cumulatifs au sein du Système du Saint-Laurent et un article de vulgarisation scientifique. J'ai également présenté mes travaux de recherche à de multiples conférences à travers 11 présentations orales et 9 affiches scientifiques. Une liste complète des publications et conférences est disponible à la fin de l'avant-propos.
 
 Je veux reconnaître les nombreuses sources de support financier et scientifique dont j'ai bénéficié tout au long de ma thèse. Je débute en remerciant les organismes subventionnaires qui ont rendu mon projet possible. Je remercie le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), qui m'a octroyé une bourse d'études supérieures de doctorat (ES D), et le Fonds de recherche du Québec -- Nature et Technologies (FRQNT), qui m'a octroyé une bourse de doctorat en recherche.
 
@@ -9,3 +9,70 @@ Je tiens également à remercier les multiples regroupements de recherche dont j
 Je remercie également divers ministères provinciaux et fédéraux qui ont contribué au projet, que ce soit par du support financier, du temps d'experts ou des données. Un merci particulier à Pêches et Océans Canada, sans qui ce projet n'aurait été possible. Merci également au Ministère de l'Environnement et de la Lutte contre les changements climatiques (MELCC) et au Ministère de l’Agriculture, des Pêcheries et de l’Alimentation du Québec (MAPAQ) du Gouvernement du Québec, au Département Agriculture, Aquaculture et Pêches du Gouvernement du Nouveau-Brunswick, au Département de Pêcheries et de l'Aquaculture du Gouvernement de la Nouvelle-Écosse, et au Département de Pêcheries, de Foresterie et d'Agriculture du Gouvernement de Terre-Neuve-et-Labrador.
 
 Finalement, je tiens à remercier l'Université du Québec à Rimouski, l'Université Laval et l'Université de Sherbrooke pour m'avoir accueilli, fournit des locaux de travail et du support administratif.
+
+**Publications scientifiques:**
+
+\begin{singlespace}
+
+Beauchesne, D, Cazelles, K, Daigle, R M, Gravel, D, Archambault, P (In preparation). Ecological interactions amplify cumulative effects in marine ecosystems.
+
+Beauchesne, D, Cazelles, K, Archambault, P, Dee, L, Gravel, D, (In revision). On the sensitivity of food webs to multiple stressors (preprint). Preprints. https://doi.org/10.22541/au.159621485.58777803
+
+Beauchesne, D, Daigle, R M, Vissault, S, Gravel, D, Bastien, A, Bélanger, S, Bernatchez, P, Blais, M, Bourdages, H, Chion, C, Galbraith, P S, Halpern, B S, Lavoie, C, McKindsey, C W, Mucci, A, Pineault, S, Starr, M, Ste-Marie, A-S, Archambault, P (2020). Characterizing Exposure to and Sharing Knowledge of Drivers of Environmental Change in the St. Lawrence System in Canada. Frontiers in Marine Science, 7. https://doi.org/10.3389/fmars.2020.00383.
+
+Carrier-Belleau C, Beauchesne D, Dreujou E, Isabel L (2019) Le Saint-Laurent : comment évaluer l’empreinte humaine dans un système complexe ? L'interdisciplinaire, Institut Hydro-Québec en environnement, développement et société (Institut EDS), Université Laval, Numéro 17, Automne 2019
+
+Schloss IR, Archambault P, Beauchesne D, Bourgault D, Cusson M, Dumont D, Ferreyra G, Levasseur M, Pelletier É, St-Louis R, Tremblay R (2018) Impacts potentiels cumulés des facteurs de stress liés aux activités humaines sur l’écosystème marin du Saint-Laurent. Notre Golfe network.
+
+Beauchesne D, Desjardins-Proulx P, Archambault P, Gravel D (2016) Thinking outside the box – predicting interactions in data-poor environments. Life and Environment. 66(3-4):333-342
+
+Beauchesne D, Grant C, Gravel D, Archambault P (2016) L’évaluation des impacts cumulés dans l’estuaire et le golfe du Saint-Laurent : vers une planification stratégique de l’utilisation et de l’exploitation des ressources. Le Naturaliste Canadien. 140(2):45-55
+
+\end{singlespace}
+
+
+**Communications orales et par affiches lors de conférences:**
+
+\begin{singlespace}
+
+Beauchesne D (2019) Évaluation de l’exposition cumulée au sein du Saint-Laurent: défis, solutions et perspectives. Invited speaker. Institut Maurice Lamontagne, Department of Fisheries and Oceans Canada, Mont-Joli, Québec, Canada. May 2nd. (présentation orale)
+
+Beauchesne D, Cazelles K, Archambault P, Gravel D (2019) La sensibilité des réseaux trophiques à de multiples perturbations. Forum québécois en sciences de la mer, Rimouski, Québec, Canada, November 11-13th. (présentation par affiche)
+
+Beauchesne D, Daigle R, Goldsmit J, Metaxas A, Snelgrove P, Archambault P (2018) An overview of activities and outputs of the mentoring program for the 4th World Conference on Marine Biodiversity. CHONe II 2018 annual meeting, Ottawa, Ontario, Canada, November 29th - December 1st. (présentation orale)
+
+Beauchesne D, Daigle R, Vissault S, Gravel D, Bastien A, Bélanger S, Bernatchez P, Chion C, Galbraith PS, Halpern BS, Lavoie C, McKindsey CW, Mucci A, Starr M, Ste-Marie A-S, Archambault P (2018) Next Generation Planning - Structuring and Sharing Environmental Drivers Data for the St. Lawrence. CHONe II 2018 annual meeting, Ottawa, Ontario, Canada, November 29th - December 1st. (présentation par affiche)
+
+Beauchesne D, Daigle R, Vissault S, Gravel D, Bélanger S, Bernatchez P, Chion C, Galbraith PS,Halpern BS, McKindsey CW, Mucci A, Starr M, Archambault P (2018) Regional assessment of cumulative impacts in the St. Lawrence system. CHONe II 2018 annual meeting, Ottawa, Ontario, Canada, November 29th - December 1st. (présentation par affiche)
+
+Isabel L, Beauchesne D, Daigle R, Archambault P (2018) CHONe project presentation. CHONe II 2018 annual meeting, Ottawa, Ontario, Canada, November 29th - December 1st. (présentation orale)
+
+Beauchesne D, Daigle R, Vissault S, Lavoie C, Gravel D, Archambault P (2018) Meta-networks Using network theory to structure and evaluate cumulative impacts. 4th World Conference on Marine Biodiversity. Montréal, Québec, Canada. May 13-15th. (présentation orale)
+
+Beauchesne D, Gravel D, Archambault P (2018) Next Generation Planning - Evaluating cumulative impacts on the communities of the Estuary and Gulf of St. Lawrence. Invited speaker at Guelph University. Guelph, Ontario, Canada. February 20th (présentation orale)
+
+Beauchesne D, Daigle R, Vissault S, Gravel D, Bélanger S, Bernatchez P, Chion C, Galbraith PS,Halpern BS, McKindsey CW, Mucci A, Starr M, Archambault P (2018) Évaluation régionale des impacts cumulés sur le système du Saint-Laurent. Québec Ocean's Annual Scientific Meeting 2018, Rivière-du-Loup, Québec, Canada. November 5-6th. (présentation par affiche)
+
+Beauchesne D, Cazelles K, Blanchet F G, Gravel D, Archambault P (2017) Predicting the spatial distribution of ecological networks. Canadian Society for Ecology and Evolution Meeting 2017, Victoria, British-Columbia, Canada. May 7-11th. (présentation par affiche)
+
+Beauchesne D, Daigle R, Gravel D, Mckindsey C, Therriault T, Archambault P (2017) Indicators of benthic condition at the gulf-scale: megabenthic community structure. CHONe II 2017 annual meeting, Gatineau, Québec, Canada, May 1-5th. (présentation orale)
+
+Beauchesne D, Gravel D, Archambault P (2017) Cumulative impacts on the communities of the estuary and the gulf of St. Lawrence. CHONe II 2017 annual meeting, Gatineau, Québec, Canada, May 1-5th. (présentation par affiche)
+
+Beauchesne D, Desjardins-Proulx P, Archambault P, Gravel D (2017) Using machine learning to predict biotic interactions. Guest lecturer, Midi numérique, Biology Department, Université de Sherbrooke, Sherbrooke, Québec, Canada. February 27th 2017. (présentation orale)
+
+Beauchesne D (2017) An “homage” to 50 years of cumulative effects assessment or Why are we still not managing resources systematically? Guest lecturer, Advanced Seminar in Environmental Science, Department of Geography, Planning and Environment, Concordia University, Montréal, Québec. February 1st 2017. (présentation orale)
+
+Beauchesne D, Daigle R, Gravel D, Bélanger S, Bernatchez P, Chion C, Galbraith PS, Halpern B, Lavoie C, McKindsey C, Starr M, Tremblay C, Vissault S, Archambault P (2017) Next Generation Planning - Structuring and Sharing Stressors Data for the St. Lawrence. Québec Ocean's Annual Scientific Meeting 2017, Rivière-du-Loup, Québec, Canada. November 7-9th. (présentation par affiche)
+
+Beauchesne D, Desjardins-Proulx P, Archambault P, Gravel D (2016) Thinking outside the box – predicting biotic interations in data-poor environments. Annual meeting of the Québec Center for Biodiversity Science (QCBS), Montreal, Québec, Canada, December 15th-16th. (présentation orale)
+
+Beauchesne D, Desjardins-Proulx P, Archambault P, Gravel D (2016) The link between machine learning, networking, pokemon and ecology. Québec Océans’s 15th Annual General Assembly, Rimouski, Canada, 8-9th November 2016 (présentation orale)
+
+Beauchesne D, Gravel D, Archambault P (2015) Évaluation des impacts cumulés sur les communautés benthiques et pélagiques de l’estuaire et du golfe du Saint-Laurent. Québec-Océan's 14th Annual General Assembly, Québec, Québec, Canada, November 10th-11th. DOI : 10.13140/RG.2.1.2209.8961 (présentation par affiche)
+
+Beauchesne D, Gravel D, Archambault P (2015) Évaluation des impacts cumulés sur les communautés de l’estuaire et du golfe du Saint-Laurent. Annual meeting of the Québec Center for Biodiversity Science (QCBS), Montreal, Québec, Canada, October 29th-30th. (présentation orale)
+
+Beauchesne D, Gravel D, Archambault P (2015) Évaluation des impacts cumulés sur les communautés de l’estuaire et du golfe du Saint-Laurent. Annual meeting of the Québec Center for Biodiversity Science (QCBS), Montreal, Québec, Canada, October 29th-30th. (présentation par affiche)
+
+\end{singlespace}
